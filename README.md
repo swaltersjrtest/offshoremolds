@@ -8,7 +8,7 @@ Modern rebuild of the Offshore Molds marketing site, focused on U.S.-managed off
 - React
 - Tailwind CSS
 - Lucide icons
-- Vercel-ready static marketing page
+- Vercel-ready multi-page marketing site
 
 ## Commands
 
@@ -20,4 +20,4 @@ npm run build
 
 ## Content Sources
 
-The rebuild uses public content and image assets from the legacy Offshore Molds site, then restructures the messaging around the stronger visual and conversion patterns in Cavalier Tool and SyBridge.
+The rebuild uses public content and image assets from the legacy Offshore Molds site, then restructures the messaging into a tighter homepage with dedicated pages for capabilities, process, quality, and contact.
