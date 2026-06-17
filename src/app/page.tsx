@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Ruler, Sparkles } from "lucide-react";
+import { AnimatedMetrics } from "./components/animated-metrics";
 import { CtaBand, PrimaryLink, SiteFooter, SiteHeader } from "./components/site-shell";
-import { homeRoutes, pillars, proofPoints } from "./site-data";
+import { anniversary, homeRoutes, pillars, proofPoints } from "./site-data";
 
 export default function Home() {
   return (
@@ -75,15 +76,25 @@ export default function Home() {
       </section>
 
       <section className="border-y border-[#d8dedb] bg-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#d8dedb] px-0 sm:grid-cols-4">
-          {proofPoints.map((point) => (
-            <div key={point.value} className="bg-white px-4 py-8 sm:px-6">
-              <p className="text-4xl font-black tracking-tight text-[#18201f]">{point.value}</p>
-              <p className="mt-2 max-w-44 text-sm font-semibold leading-5 text-[#58635f]">
-                {point.label}
-              </p>
-            </div>
-          ))}
+        <AnimatedMetrics points={proofPoints} />
+      </section>
+
+      <section className="border-b border-[#263532] bg-[#101716] px-4 py-8 text-white sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#ffb12a]">
+              {anniversary.title}
+            </p>
+            <p className="mt-2 max-w-3xl text-lg leading-8 text-[#d5dfda]">{anniversary.text}</p>
+          </div>
+          <div className="flex h-24 w-24 shrink-0 items-center justify-center border border-[#ffb12a]/45 bg-[#ffb12a] text-center text-[#101716] shadow-sm">
+            <span>
+              <span className="block text-5xl font-black leading-none">{anniversary.value}</span>
+              <span className="block text-xs font-extrabold uppercase tracking-[0.14em]">
+                years
+              </span>
+            </span>
+          </div>
         </div>
       </section>
 

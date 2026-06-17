@@ -17,6 +17,16 @@ export type IconItem = {
   text: string;
 };
 
+export type ProofPoint = {
+  value: string;
+  label: string;
+  countTo: number;
+  prefix?: string;
+  suffix?: string;
+  durationMs?: number;
+  useGrouping?: boolean;
+};
+
 export const mainNav = [
   { label: "Capabilities", href: "/capabilities" },
   { label: "Process", href: "/process" },
@@ -35,24 +45,41 @@ export const contactInfo = {
   chinaOffice: ["Huang Jiang Town, Dongguan", "+(86 769) 82330086"],
 };
 
-export const proofPoints = [
+export const proofPoints: ProofPoint[] = [
   {
     value: "6 weeks",
+    countTo: 6,
+    suffix: " weeks",
     label: "target build time after design approval",
   },
   {
     value: "0-3500T",
+    countTo: 3500,
+    prefix: "0-",
+    suffix: "T",
+    useGrouping: false,
     label: "plastic injection mold programs supported",
   },
   {
     value: "2001",
+    countTo: 2001,
+    durationMs: 1500,
+    useGrouping: false,
     label: "founded by experienced mold makers",
   },
   {
     value: "3 hr",
+    countTo: 3,
+    suffix: " hr",
     label: "minimum production-condition sampling run",
   },
 ];
+
+export const anniversary = {
+  value: "25",
+  title: "Celebrating 25 years",
+  text: "Founded in 2001, OMI is marking 25 years of U.S.-managed offshore tooling support in 2026.",
+};
 
 export const pillars: IconItem[] = [
   {
