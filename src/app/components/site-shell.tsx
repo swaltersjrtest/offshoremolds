@@ -48,10 +48,11 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
             )}
           >
             <Image
-              src="/omi/logo.png"
+              src="/omi/logo-white-bg.jpg"
               alt="Offshore Molds logo"
-              width={54}
-              height={54}
+              width={1024}
+              height={1110}
+              className="h-full w-full object-contain"
               priority
             />
           </span>
