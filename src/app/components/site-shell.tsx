@@ -108,13 +108,14 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-white/20" />
+      <div className="absolute inset-y-20 left-0 w-full bg-[#087f93] md:hidden" />
       <div
-        className="absolute inset-y-20 left-0 w-full bg-[#087f93] md:w-[64%]"
-        style={{ clipPath: "polygon(0 0, 78% 0, 100% 100%, 0 100%)" }}
+        className="absolute inset-y-20 left-0 hidden bg-[#087f93] md:block md:w-[90%] lg:w-[76%] xl:w-[70%]"
+        style={{ clipPath: "polygon(0 0, 86% 0, 100% 100%, 0 100%)" }}
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-12">
-        <div className="max-w-2xl">
-          <p className="border-l-4 border-white pl-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
+        <div className="max-w-xl">
+          <p className="inline-block border-l-4 border-white pl-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
             {eyebrow}
           </p>
           <h1 className="mt-5 text-balance text-4xl font-black uppercase leading-[1.02] text-white sm:text-6xl">
