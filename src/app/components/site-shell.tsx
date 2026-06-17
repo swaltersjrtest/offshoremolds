@@ -33,18 +33,18 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
   return (
     <header
       className={cn(
-        "inset-x-0 top-0 z-30",
+        "inset-x-0 top-0 z-30 border-b border-[#dfe8e6] bg-white/95 shadow-sm backdrop-blur",
         isOverlay
           ? "absolute"
-          : "sticky border-b border-[#d8dedb] bg-white/95 shadow-sm backdrop-blur",
+          : "sticky",
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" aria-label="Offshore Molds home" className="flex items-center gap-3">
           <span
             className={cn(
               "flex h-14 w-14 shrink-0 items-center justify-center rounded-[4px] p-1 shadow-sm",
-              isOverlay ? "bg-white/90" : "bg-[#f4f6f5]",
+              isOverlay ? "bg-[#f4f6f5]" : "bg-[#f4f6f5]",
             )}
           >
             <Image
@@ -58,7 +58,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
           <span
             className={cn(
               "hidden text-sm font-semibold uppercase tracking-[0.18em] sm:block",
-              isOverlay ? "text-white" : "text-[#101716]",
+              isOverlay ? "text-[#101716]" : "text-[#101716]",
             )}
           >
             Offshore Molds
@@ -68,27 +68,28 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
         <nav
           aria-label="Primary navigation"
           className={cn(
-            "hidden items-center gap-6 rounded-[4px] px-5 py-3 text-sm font-medium backdrop-blur md:flex",
+            "hidden items-center gap-6 px-5 py-3 text-sm font-bold uppercase text-[#111817] md:flex",
             isOverlay
-              ? "bg-[#101716]/70 text-white"
-              : "bg-[#f4f6f5] text-[#18201f]",
+              ? "bg-white/0"
+              : "bg-white/0",
           )}
         >
           {mainNav.map((item) => (
-            <Link key={item.href} href={item.href} className="transition hover:text-[#ef4423]">
+            <Link key={item.href} href={item.href} className="transition hover:text-[#14a8bd]">
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <a
-          href={contactInfo.phoneHref}
-          className="inline-flex min-h-11 items-center gap-2 rounded-[4px] bg-[#ef4423] px-4 text-sm font-bold text-white shadow-sm transition hover:bg-[#c73319]"
+        <Link
+          href="/contact"
+          className="inline-flex min-h-12 items-center gap-2 bg-[#a8e451] px-5 pl-7 text-sm font-extrabold uppercase tracking-[0.08em] text-[#101716] shadow-sm transition hover:bg-[#94cf39]"
+          style={{ clipPath: "polygon(18px 0, 100% 0, 100% 100%, 0 100%)" }}
         >
           <Phone aria-hidden="true" size={17} />
-          <span className="hidden sm:inline">{contactInfo.phone}</span>
-          <span className="sm:hidden">Call</span>
-        </a>
+          <span className="hidden sm:inline">Start the conversation</span>
+          <span className="sm:hidden">Contact</span>
+        </Link>
       </div>
     </header>
   );
@@ -96,7 +97,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
 export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProps) {
   return (
-    <section className="relative isolate flex min-h-[58vh] items-end overflow-hidden bg-[#101716]">
+    <section className="relative isolate flex min-h-[58vh] items-end overflow-hidden bg-white pt-20">
       <SiteHeader variant="overlay" />
       <Image
         src={image}
@@ -106,17 +107,20 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-[#101716]/55" />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(16,23,22,0.94)_0%,rgba(16,23,22,0.7)_44%,rgba(16,23,22,0.24)_100%)]" />
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:px-8 lg:pb-16">
+      <div className="absolute inset-0 bg-white/15" />
+      <div
+        className="absolute inset-y-20 left-0 w-full bg-[#12aec4]/95 md:w-[72%]"
+        style={{ clipPath: "polygon(0 0, 76% 0, 100% 100%, 0 100%)" }}
+      />
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-28 sm:px-6 lg:px-8 lg:pb-16">
         <div className="max-w-3xl">
-          <p className="border-l-4 border-[#ffb12a] pl-4 text-sm font-extrabold uppercase tracking-[0.18em] text-[#ffd58b]">
+          <p className="border-l-4 border-white pl-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
             {eyebrow}
           </p>
           <h1 className="mt-5 text-balance text-5xl font-black uppercase leading-[0.95] text-white sm:text-7xl">
             {title}
           </h1>
-          <p className="mt-6 max-w-2xl text-pretty text-xl leading-8 text-[#e8efed]">
+          <p className="mt-6 max-w-2xl text-pretty text-xl leading-8 text-white">
             {copy}
           </p>
         </div>
@@ -135,7 +139,8 @@ export function PrimaryLink({
   return (
     <Link
       href={href}
-      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ef4423] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-[#c73319]"
+      className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#a8e451] px-6 pl-8 text-sm font-extrabold uppercase tracking-[0.12em] text-[#101716] transition hover:bg-[#94cf39]"
+      style={{ clipPath: "polygon(16px 0, 100% 0, 100% 100%, 0 100%)" }}
     >
       {children}
       <ArrowRight aria-hidden="true" size={18} />
@@ -153,7 +158,7 @@ export function SecondaryLink({
   return (
     <Link
       href={href}
-      className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-[#18201f] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-[#18201f] transition hover:bg-[#18201f] hover:text-white"
+      className="inline-flex min-h-12 items-center justify-center gap-2 border border-[#18201f] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-[#18201f] transition hover:bg-[#18201f] hover:text-white"
     >
       {children}
       <ArrowRight aria-hidden="true" size={18} />
@@ -243,10 +248,14 @@ export function CtaBand({
   copy?: string;
 }) {
   return (
-    <section className="bg-[#101716] px-4 py-16 text-white sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-[#101716] px-4 py-16 text-white sm:px-6 lg:px-8">
+      <div
+        className="absolute bottom-0 right-0 h-32 w-64 bg-[#12aec4]"
+        style={{ clipPath: "polygon(35% 0, 100% 0, 100% 100%, 0 100%)" }}
+      />
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 lg:flex-row lg:items-center">
         <div className="max-w-3xl">
-          <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#ffb12a]">
+          <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#a8e451]">
             Start the conversation
           </p>
           <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">{title}</h2>
@@ -255,7 +264,8 @@ export function CtaBand({
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
           <a
             href={contactInfo.rfqHref}
-            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] bg-[#ef4423] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-[#c73319]"
+            className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#a8e451] px-6 pl-8 text-sm font-extrabold uppercase tracking-[0.12em] text-[#101716] transition hover:bg-[#94cf39]"
+            style={{ clipPath: "polygon(16px 0, 100% 0, 100% 100%, 0 100%)" }}
           >
             Email an RFQ <FileCheck2 aria-hidden="true" size={18} />
           </a>

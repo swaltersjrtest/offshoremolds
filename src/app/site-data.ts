@@ -20,11 +20,6 @@ export type IconItem = {
 export type ProofPoint = {
   value: string;
   label: string;
-  countTo: number;
-  prefix?: string;
-  suffix?: string;
-  durationMs?: number;
-  useGrouping?: boolean;
 };
 
 export const mainNav = [
@@ -48,29 +43,18 @@ export const contactInfo = {
 export const proofPoints: ProofPoint[] = [
   {
     value: "6 weeks",
-    countTo: 6,
-    suffix: " weeks",
     label: "target build time after design approval",
   },
   {
     value: "0-3500T",
-    countTo: 3500,
-    prefix: "0-",
-    suffix: "T",
-    useGrouping: false,
     label: "plastic injection mold programs supported",
   },
   {
     value: "2001",
-    countTo: 2001,
-    durationMs: 1500,
-    useGrouping: false,
     label: "founded by experienced mold makers",
   },
   {
     value: "3 hr",
-    countTo: 3,
-    suffix: " hr",
     label: "minimum production-condition sampling run",
   },
 ];
@@ -198,5 +182,28 @@ export const homeRoutes = [
     href: "/quality",
     icon: ShieldCheck,
     text: "Review the checks, reports, materials, and warranty behind the build.",
+  },
+];
+
+export const lifecycleHighlights = [
+  {
+    title: "Design & Engineering",
+    text: "Moldflow, tool concept, manufacturability review, and customer design approval before the build begins.",
+    href: "/process",
+  },
+  {
+    title: "Tool Build",
+    text: "China-based execution with daily oversight, milestone visibility, and U.S. program ownership.",
+    href: "/capabilities",
+  },
+  {
+    title: "Sampling & Validation",
+    text: "Production-condition sampling, first article inspection, process data, and approval documentation.",
+    href: "/quality",
+  },
+  {
+    title: "Final Handoff",
+    text: "Teardown inspection, protection, shipment planning, and direct support for the receiving molder.",
+    href: "/contact",
   },
 ];
