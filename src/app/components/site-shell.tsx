@@ -285,9 +285,7 @@ export function SiteFooter() {
   return (
     <footer className="bg-white px-4 py-8 text-[#58635f] sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm">
-          Copyright 2026 Offshore Molds, Inc. Rebuilt for a faster, clearer tooling conversation.
-        </p>
+        <p className="text-sm">Copyright 2026 Offshore Molds, Inc. Built by ZUVIX.NET</p>
         <div className="flex flex-wrap items-center gap-3 text-sm font-bold">
           {mainNav.map((item) => (
             <Link key={item.href} href={item.href} className="hover:text-[#ef4423]">
