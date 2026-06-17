@@ -97,7 +97,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
 export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProps) {
   return (
-    <section className="relative isolate flex min-h-[48vh] items-end overflow-hidden bg-white pt-20">
+    <section className="relative isolate flex min-h-[390px] items-end overflow-hidden bg-white pt-20 md:min-h-[48vh]">
       <SiteHeader variant="overlay" />
       <Image
         src={image}
@@ -108,9 +108,9 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-white/20" />
-      <div className="absolute inset-y-20 left-0 w-full bg-[#087f93] md:hidden" />
+      <div className="absolute inset-0 w-full bg-[#087f93] md:hidden" />
       <div
-        className="absolute inset-y-20 left-0 hidden bg-[#087f93] md:block md:w-[90%] lg:w-[76%] xl:w-[70%]"
+        className="absolute inset-y-0 left-0 hidden bg-[#087f93] md:block md:w-[90%] lg:w-[76%] xl:w-[70%]"
         style={{ clipPath: "polygon(0 0, 86% 0, 100% 100%, 0 100%)" }}
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-12">
