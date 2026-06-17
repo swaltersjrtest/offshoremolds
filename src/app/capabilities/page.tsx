@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function CapabilitiesPage() {
   return (
-    <main className="min-h-screen bg-white text-[#18201f]">
+    <main className="min-h-screen bg-white text-[#222222]">
       <PageHero
         eyebrow="Capabilities"
         title="Tooling Capacity"
@@ -30,16 +30,16 @@ export default function CapabilitiesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div className="max-w-3xl">
-              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#0f766e]">
+              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
                 What OMI builds
               </p>
-              <h2 className="mt-4 text-4xl font-black tracking-tight text-[#101716] sm:text-5xl">
+              <h2 className="mt-4 text-4xl font-black tracking-tight text-[#222222] sm:text-5xl">
                 Molds with the documentation and oversight buyers need.
               </h2>
             </div>
             <a
               href="mailto:information@offshoremolds.com?subject=Capabilities%20question"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-[#18201f] px-5 text-sm font-extrabold uppercase tracking-[0.12em] text-[#18201f] transition hover:bg-[#18201f] hover:text-white"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-[#123962] px-5 text-sm font-extrabold uppercase tracking-[0.12em] text-[#123962] transition hover:bg-[#123962] hover:text-white"
             >
               Ask a tooling question <Mail aria-hidden="true" size={18} />
             </a>
@@ -50,7 +50,7 @@ export default function CapabilitiesPage() {
               const Icon = item.icon;
 
               return (
-                <article key={item.title} className="group overflow-hidden border border-[#d8dedb] bg-[#f4f6f5]">
+                <article key={item.title} className="group overflow-hidden border border-[#ddd] bg-[#f7f7f7]">
                   <div className="relative h-56">
                     <Image
                       src={item.image}
@@ -62,13 +62,13 @@ export default function CapabilitiesPage() {
                   </div>
                   <div className="p-5">
                     <div className="flex items-center justify-between gap-3">
-                      <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#ef4423]">
+                      <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#e5402d]">
                         {item.eyebrow}
                       </p>
-                      <Icon aria-hidden="true" size={20} className="text-[#0f766e]" />
+                      <Icon aria-hidden="true" size={20} className="text-[#1e5299]" />
                     </div>
-                    <h3 className="mt-3 text-2xl font-black text-[#101716]">{item.title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-[#58635f]">{item.text}</p>
+                    <h3 className="mt-3 text-2xl font-black text-[#222222]">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-[#777]">{item.text}</p>
                   </div>
                 </article>
               );
@@ -77,16 +77,16 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
-      <section className="bg-[#f4f6f5] py-18 sm:py-24">
+      <section className="bg-[#f7f7f7] py-18 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:items-center">
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#ef4423]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#e5402d]">
               Program range
             </p>
-            <h2 className="mt-4 text-4xl font-black leading-tight text-[#101716] sm:text-5xl">
+            <h2 className="mt-4 text-4xl font-black leading-tight text-[#222222] sm:text-5xl">
               Built for demanding programs, not mystery sourcing.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-[#4f5b57]">
+            <p className="mt-5 text-lg leading-8 text-[#777]">
               OMI supports programs from small parts to large tools, using documented approvals
               and close inspection before tools are released for shipment.
             </p>
@@ -95,11 +95,11 @@ export default function CapabilitiesPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-px bg-[#d8dedb]">
+          <div className="grid grid-cols-2 gap-px bg-[#ddd]">
             {proofPoints.map((point) => (
               <div key={point.value} className="bg-white px-4 py-8 sm:px-6">
-                <p className="text-4xl font-black tracking-tight text-[#18201f]">{point.value}</p>
-                <p className="mt-2 max-w-44 text-sm font-semibold leading-5 text-[#58635f]">
+                <p className="text-4xl font-black tracking-tight text-[#222222]">{point.value}</p>
+                <p className="mt-2 max-w-44 text-sm font-semibold leading-5 text-[#777]">
                   {point.label}
                 </p>
               </div>
