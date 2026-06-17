@@ -46,7 +46,7 @@ export const proofPoints: ProofPoint[] = [
     label: "target build time after design approval",
   },
   {
-    value: "0-3500T",
+    value: "50-3500T",
     label: "plastic injection mold programs supported",
   },
   {
