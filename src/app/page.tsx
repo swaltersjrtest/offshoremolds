@@ -46,16 +46,16 @@ export default function Home() {
               documented validation, and fast handoff complex programs need.
             </p>
 
-            <div className="mt-6 flex max-w-sm items-center gap-4 border border-white/70 bg-white/95 p-4 text-[#222222] shadow-xl md:hidden">
-              <p className="text-4xl font-black leading-none text-[#1e5299]">
+            <div className="mt-6 flex max-w-sm overflow-hidden border border-white bg-white text-[#222222] shadow-2xl ring-2 ring-[#e5402d]/80 md:hidden">
+              <p className="flex min-w-24 items-center justify-center bg-[#e5402d] px-4 text-5xl font-black leading-none text-white">
                 {anniversary.value}
               </p>
-              <div>
-                <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#1e5299]">
+              <div className="flex-1 p-4">
+                <p className="text-xs font-black uppercase tracking-[0.16em] text-[#123962]">
                   {anniversary.title}
                 </p>
-                <p className="mt-1 text-sm font-medium leading-5 text-[#777]">
-                  U.S.-managed offshore tooling support.
+                <p className="mt-1 text-sm font-semibold leading-5 text-[#555]">
+                  Years of U.S.-managed offshore tooling support.
                 </p>
               </div>
             </div>
@@ -72,14 +72,24 @@ export default function Home() {
           </div>
 
           <div className="hidden max-w-sm gap-3 self-end justify-self-end md:grid">
-            <div className="border border-white/70 bg-white/95 p-5 shadow-2xl">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#1e5299]">
-                {anniversary.title}
-              </p>
-              <p className="mt-3 text-4xl font-black text-[#222222]">{anniversary.value}</p>
-              <p className="mt-2 text-sm leading-6 text-[#777]">
-                years of OMI tooling support in 2026, grounded in U.S. project ownership and
-                China-based execution.
+            <div className="overflow-hidden border border-white bg-white text-[#222222] shadow-2xl ring-2 ring-[#e5402d]/70">
+              <div className="h-2 bg-[#e5402d]" />
+              <div className="grid grid-cols-[6.5rem_1fr] items-stretch">
+                <div className="flex items-center justify-center bg-[#123962] px-4 text-white">
+                  <p className="text-5xl font-black leading-none">{anniversary.value}</p>
+                </div>
+                <div className="p-5">
+                  <p className="text-sm font-black uppercase tracking-[0.18em] text-[#123962]">
+                    {anniversary.title}
+                  </p>
+                  <p className="mt-2 text-sm font-semibold leading-6 text-[#555]">
+                    Years of OMI tooling support in 2026, grounded in U.S. project ownership and
+                    China-based execution.
+                  </p>
+                </div>
+              </div>
+              <p className="border-t border-[#ddd] bg-[#f7f7f7] px-5 py-3 text-xs font-black uppercase tracking-[0.16em] text-[#e5402d]">
+                Founded in 2001
               </p>
             </div>
             <div className="grid grid-cols-2 gap-3">
