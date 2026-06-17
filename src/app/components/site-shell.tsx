@@ -39,11 +39,11 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
           : "sticky",
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" aria-label="Offshore Molds home" className="flex items-center gap-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
+        <Link href="/" aria-label="Offshore Molds home" className="flex min-w-0 items-center gap-2 sm:gap-3">
           <span
             className={cn(
-              "flex h-14 w-14 shrink-0 items-center justify-center rounded-[4px] p-1 shadow-sm",
+              "flex h-12 w-12 shrink-0 items-center justify-center rounded-[4px] p-1 shadow-sm sm:h-14 sm:w-14",
               isOverlay ? "bg-[#f4f6f5]" : "bg-[#f4f6f5]",
             )}
           >
@@ -57,7 +57,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
           </span>
           <span
             className={cn(
-              "hidden text-sm font-semibold uppercase tracking-[0.18em] sm:block",
+              "block truncate text-[0.68rem] font-semibold uppercase tracking-[0.12em] sm:text-sm sm:tracking-[0.18em]",
               isOverlay ? "text-[#101716]" : "text-[#101716]",
             )}
           >

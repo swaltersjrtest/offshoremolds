@@ -46,6 +46,20 @@ export default function Home() {
               documented validation, and fast handoff complex programs need.
             </p>
 
+            <div className="mt-6 flex max-w-sm items-center gap-4 border border-white/70 bg-white/95 p-4 text-[#101716] shadow-xl md:hidden">
+              <p className="text-4xl font-black leading-none text-[#087f93]">
+                {anniversary.value}
+              </p>
+              <div>
+                <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#087f93]">
+                  {anniversary.title}
+                </p>
+                <p className="mt-1 text-sm font-medium leading-5 text-[#4e5a56]">
+                  U.S.-managed offshore tooling support.
+                </p>
+              </div>
+            </div>
+
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <PrimaryLink href="/contact">Start an RFQ</PrimaryLink>
               <Link
