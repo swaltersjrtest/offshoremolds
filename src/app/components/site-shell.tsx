@@ -97,30 +97,30 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
 export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProps) {
   return (
-    <section className="relative isolate flex min-h-[58vh] items-end overflow-hidden bg-white pt-20">
+    <section className="relative isolate flex min-h-[48vh] items-end overflow-hidden bg-white pt-20">
       <SiteHeader variant="overlay" />
       <Image
         src={image}
         alt={imageAlt}
         fill
         priority
-        className="object-cover"
+        className="object-cover object-[68%_center]"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-white/15" />
+      <div className="absolute inset-0 bg-white/20" />
       <div
-        className="absolute inset-y-20 left-0 w-full bg-[#12aec4]/95 md:w-[72%]"
-        style={{ clipPath: "polygon(0 0, 76% 0, 100% 100%, 0 100%)" }}
+        className="absolute inset-y-20 left-0 w-full bg-[#087f93] md:w-[64%]"
+        style={{ clipPath: "polygon(0 0, 78% 0, 100% 100%, 0 100%)" }}
       />
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-28 sm:px-6 lg:px-8 lg:pb-16">
-        <div className="max-w-3xl">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-12">
+        <div className="max-w-2xl">
           <p className="border-l-4 border-white pl-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
             {eyebrow}
           </p>
-          <h1 className="mt-5 text-balance text-5xl font-black uppercase leading-[0.95] text-white sm:text-7xl">
+          <h1 className="mt-5 text-balance text-4xl font-black uppercase leading-[1.02] text-white sm:text-6xl">
             {title}
           </h1>
-          <p className="mt-6 max-w-2xl text-pretty text-xl leading-8 text-white">
+          <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-white sm:text-xl">
             {copy}
           </p>
         </div>

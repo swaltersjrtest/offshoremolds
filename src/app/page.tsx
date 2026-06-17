@@ -13,40 +13,40 @@ import {
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-[#18201f]">
-      <section className="relative isolate flex min-h-[86svh] items-end overflow-hidden bg-white pt-20 lg:min-h-[88vh]">
+      <section className="relative isolate flex min-h-[72svh] items-end overflow-hidden bg-white pt-20 lg:min-h-[76vh]">
         <SiteHeader variant="overlay" />
         <Image
           src="/omi/slide-1.jpg"
           alt="Offshore Molds tooling facility floor"
           fill
           priority
-          className="object-cover"
+          className="object-cover object-[68%_center]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-white/10" />
+        <div className="absolute inset-0 bg-white/20" />
         <div
-          className="absolute inset-y-20 left-0 w-full bg-[#12aec4]/95 md:w-[72%]"
-          style={{ clipPath: "polygon(0 0, 76% 0, 100% 100%, 0 100%)" }}
+          className="absolute inset-y-20 left-0 w-full bg-[#087f93] md:w-[66%]"
+          style={{ clipPath: "polygon(0 0, 78% 0, 100% 100%, 0 100%)" }}
         />
 
-        <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-10 px-4 pb-8 pt-24 sm:px-6 md:grid-cols-[1.08fr_0.72fr] lg:px-8 lg:pb-14">
-          <div className="max-w-3xl text-white">
-            <div className="mb-6 inline-flex items-center border-l-4 border-white bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white backdrop-blur">
+        <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-8 px-4 pb-8 pt-20 sm:px-6 md:grid-cols-[0.95fr_0.85fr] lg:px-8 lg:pb-12">
+          <div className="max-w-2xl text-white">
+            <div className="mb-5 inline-flex items-center border-l-4 border-white bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
               U.S.-managed offshore tooling
             </div>
-            <h1 className="text-balance text-5xl font-black uppercase leading-[0.95] sm:text-6xl lg:text-7xl">
+            <h1 className="text-balance text-4xl font-black uppercase leading-[1.02] sm:text-5xl lg:text-6xl">
               Precision tooling.
               <br />
               Offshore speed.
               <br />
               U.S. control.
             </h1>
-            <p className="mt-6 max-w-2xl text-pretty text-xl leading-8 text-white sm:text-2xl">
+            <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-white sm:text-xl">
               Offshore Molds builds plastic injection molds with the clear ownership,
               documented validation, and fast handoff complex programs need.
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <PrimaryLink href="/contact">Start an RFQ</PrimaryLink>
               <Link
                 href="/capabilities"
@@ -57,12 +57,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hidden gap-3 self-end md:grid">
+          <div className="hidden max-w-sm gap-3 self-end justify-self-end md:grid">
             <div className="border border-white/70 bg-white/95 p-5 shadow-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#14a8bd]">
                 {anniversary.title}
               </p>
-              <p className="mt-3 text-5xl font-black text-[#101716]">{anniversary.value}</p>
+              <p className="mt-3 text-4xl font-black text-[#101716]">{anniversary.value}</p>
               <p className="mt-2 text-sm leading-6 text-[#4e5a56]">
                 years of OMI tooling support in 2026, grounded in U.S. project ownership and
                 China-based execution.
@@ -70,13 +70,13 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div className="bg-[#a8e451] p-4 text-[#101716]">
-                <p className="text-2xl font-black">6 wk</p>
+                <p className="text-xl font-black">6 wk</p>
                 <p className="mt-1 text-sm font-bold uppercase leading-5">
                   target after approval
                 </p>
               </div>
               <div className="bg-[#101716] p-4 text-white">
-                <p className="text-2xl font-black">CMM</p>
+                <p className="text-xl font-black">CMM</p>
                 <p className="mt-1 text-sm font-bold uppercase leading-5">
                   part inspection reports
                 </p>
@@ -89,8 +89,10 @@ export default function Home() {
       <section className="border-y border-[#d8dedb] bg-white">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#d8dedb] px-0 sm:grid-cols-4">
           {proofPoints.map((point) => (
-            <div key={point.value} className="bg-white px-4 py-9 sm:px-6">
-              <p className="text-5xl font-black tracking-tight text-[#12aec4]">{point.value}</p>
+            <div key={point.value} className="bg-white px-4 py-7 sm:px-6">
+              <p className="whitespace-nowrap text-3xl font-black tracking-tight text-[#087f93] sm:text-4xl">
+                {point.value}
+              </p>
               <p className="mt-3 max-w-44 text-base font-medium leading-6 text-[#4d5a5a]">
                 {point.label}
               </p>
