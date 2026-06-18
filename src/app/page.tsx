@@ -12,8 +12,8 @@ import {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-[#222222]">
-      <section className="relative isolate flex min-h-[72svh] items-end overflow-hidden bg-white pt-20 lg:min-h-[76vh]">
+    <main className="min-h-screen bg-[#eef1f2] text-[#222222]">
+      <section className="relative isolate flex min-h-[72svh] items-end overflow-hidden bg-[#eef1f2] pt-20 lg:min-h-[76vh]">
         <SiteHeader variant="overlay" />
         <Image
           src="/omi/slide-1.jpg"
@@ -110,10 +110,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-[#ddd] bg-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#ddd] px-0 sm:grid-cols-4">
+      <section className="border-y border-[#cfd6d9] bg-[#e9edef]">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#cfd6d9] px-0 sm:grid-cols-4">
           {proofPoints.map((point) => (
-            <div key={point.value} className="bg-white px-4 py-7 sm:px-6">
+            <div key={point.value} className="bg-[#f8faf9] px-4 py-7 sm:px-6">
               <p className="whitespace-nowrap text-3xl font-black tracking-tight text-[#1e5299] sm:text-4xl">
                 {point.value}
               </p>
@@ -125,7 +125,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-18 sm:py-24">
+      <section className="bg-[#eef1f2] py-18 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:items-center">
           <div>
             <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#f7f7f7] py-18 sm:py-24">
+      <section className="bg-[#e9edef] py-18 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-end">
             <div>
@@ -212,7 +212,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-18 sm:py-24">
+      <section className="bg-[#eef1f2] py-18 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
