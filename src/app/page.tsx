@@ -20,26 +20,26 @@ export default function Home() {
           alt="Five-axis machining a large polished mold tool"
           fill
           priority
-          className="object-contain object-right-bottom"
+          className="object-contain object-[76%_bottom]"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/15" />
         <div
-          className="absolute inset-y-24 left-0 hidden bg-[#BD1816] md:block md:w-[58%] lg:w-[54%] xl:w-[50%]"
-          style={{ clipPath: "polygon(0 0, 74% 0, 96% 100%, 0 100%)" }}
+          className="absolute inset-y-24 left-0 hidden bg-[#BD1816] md:block md:w-[68%] lg:w-[62%] xl:w-[58%]"
+          style={{ clipPath: "polygon(0 0, 86% 0, 100% 100%, 0 100%)" }}
         />
         <div className="absolute inset-y-24 left-0 w-full bg-[#004ff9]/95 md:hidden" />
         <div
-          className="absolute inset-y-24 left-0 hidden bg-[#004ff9] md:block md:w-[56%] lg:w-[52%] xl:w-[48%]"
-          style={{ clipPath: "polygon(0 0, 76% 0, 98% 100%, 0 100%)" }}
+          className="absolute inset-y-24 left-0 hidden bg-[#004ff9] md:block md:w-[66%] lg:w-[60%] xl:w-[56%]"
+          style={{ clipPath: "polygon(0 0, 88% 0, 100% 100%, 0 100%)" }}
         />
 
         <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-8 px-4 pb-8 pt-20 sm:px-6 md:grid-cols-[0.88fr_0.9fr] lg:px-8 lg:pb-12">
-          <div className="max-w-[34rem] text-white">
+          <div className="max-w-lg text-white">
             <div className="mb-5 inline-block max-w-full border-l-4 border-white bg-white/10 px-4 py-2 text-xs font-semibold uppercase leading-5 tracking-[0.18em] text-white backdrop-blur">
               World Leader of Zero Tolerance Plastic Injection Molds in 6 Weeks
             </div>
-            <h1 className="text-balance text-4xl font-black uppercase leading-[1.02] sm:text-5xl lg:text-[3.4rem]">
+            <h1 className="text-balance text-4xl font-black uppercase leading-[1.02] sm:text-5xl lg:text-[3.2rem]">
               Precision tooling.
               <br />
               Offshore speed.
