@@ -25,11 +25,11 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/15" />
         <div
-          className="absolute inset-y-20 left-0 hidden bg-[#BD1816] md:block md:w-[70%]"
+          className="absolute inset-y-20 left-0 hidden bg-[#BD1816] md:block md:w-[68%] lg:w-[66%] xl:w-[64%]"
           style={{ clipPath: "polygon(0 0, 76% 0, 98% 100%, 0 100%)" }}
         />
         <div
-          className="absolute inset-y-20 left-0 w-full bg-[#004ff9] md:w-[66%]"
+          className="absolute inset-y-20 left-0 w-full bg-[#004ff9]/95 md:w-[66%] md:bg-[#004ff9] lg:w-[64%] xl:w-[62%]"
           style={{ clipPath: "polygon(0 0, 78% 0, 100% 100%, 0 100%)" }}
         />
 

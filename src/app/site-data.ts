@@ -109,7 +109,7 @@ export const capabilities = [
     title: "Sampling & Validation",
     eyebrow: "Run it first",
     icon: Microscope,
-    image: "/omi/polished-components.png",
+    image: "/omi/sampling-validation.jpg",
     text: "Molds are sampled under normal molding conditions with process parameters, first articles, and supporting documentation.",
   },
 ];
