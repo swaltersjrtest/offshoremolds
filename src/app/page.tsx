@@ -25,7 +25,11 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-white/20" />
         <div
-          className="absolute inset-y-20 left-0 w-full bg-[#1e5299] md:w-[66%]"
+          className="absolute inset-y-20 left-0 hidden bg-[#BD1816] md:block md:w-[70%]"
+          style={{ clipPath: "polygon(0 0, 76% 0, 98% 100%, 0 100%)" }}
+        />
+        <div
+          className="absolute inset-y-20 left-0 w-full bg-[#004ff9] md:w-[66%]"
           style={{ clipPath: "polygon(0 0, 78% 0, 100% 100%, 0 100%)" }}
         />
 
@@ -46,18 +50,16 @@ export default function Home() {
               documented validation, and fast handoff complex programs need.
             </p>
 
-            <div className="mt-6 flex max-w-sm overflow-hidden border border-white bg-white text-[#222222] shadow-2xl ring-2 ring-[#e5402d]/80 md:hidden">
-              <p className="flex min-w-24 items-center justify-center bg-[#e5402d] px-4 text-5xl font-black leading-none text-white">
-                {anniversary.value}
-              </p>
-              <div className="flex-1 p-4">
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-[#123962]">
-                  {anniversary.title}
-                </p>
-                <p className="mt-1 text-sm font-semibold leading-5 text-[#555]">
-                  Years of U.S.-managed offshore tooling support.
-                </p>
-              </div>
+            <div className="mt-6 max-w-56 overflow-hidden border-4 border-white bg-white shadow-2xl ring-2 ring-[#BD1816]/85 sm:max-w-64 md:hidden">
+              <Image
+                src="/omi/anniversary-25-years.png"
+                alt="Celebrating 25 years in business with Offshore Molds"
+                width={900}
+                height={900}
+                className="h-auto w-full object-contain"
+                sizes="(max-width: 767px) 256px"
+                priority
+              />
             </div>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -71,35 +73,32 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hidden max-w-sm gap-3 self-end justify-self-end md:grid">
-            <div className="overflow-hidden border border-white bg-white text-[#222222] shadow-2xl ring-2 ring-[#e5402d]/70">
-              <div className="h-2 bg-[#e5402d]" />
-              <div className="grid grid-cols-[6.5rem_1fr] items-stretch">
-                <div className="flex items-center justify-center bg-[#123962] px-4 text-white">
-                  <p className="text-5xl font-black leading-none">{anniversary.value}</p>
-                </div>
-                <div className="p-5">
-                  <p className="text-sm font-black uppercase tracking-[0.18em] text-[#123962]">
-                    {anniversary.title}
-                  </p>
-                  <p className="mt-2 text-sm font-semibold leading-6 text-[#555]">
-                    Years of OMI tooling support in 2026, grounded in U.S. project ownership and
-                    China-based execution.
-                  </p>
-                </div>
+          <div className="hidden max-w-[22rem] gap-4 self-center justify-self-end md:grid">
+            <div className="relative">
+              <div
+                className="absolute -inset-4 bg-[#BD1816] shadow-2xl"
+                style={{ clipPath: "polygon(9% 0, 100% 0, 91% 100%, 0 100%)" }}
+              />
+              <div className="relative overflow-hidden border-4 border-white bg-white shadow-[0_30px_80px_rgba(0,0,0,0.38)] ring-2 ring-[#004ff9]">
+                <Image
+                  src="/omi/anniversary-25-years.png"
+                  alt="Celebrating 25 years in business with Offshore Molds"
+                  width={900}
+                  height={900}
+                  className="h-auto w-full object-contain"
+                  sizes="(min-width: 1024px) 352px, 320px"
+                  priority
+                />
               </div>
-              <p className="border-t border-[#ddd] bg-[#f7f7f7] px-5 py-3 text-xs font-black uppercase tracking-[0.16em] text-[#e5402d]">
-                Founded in 2001
-              </p>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              <div className="bg-[#e5402d] p-4 text-white">
+              <div className="border-l-4 border-white bg-[#BD1816] p-4 text-white shadow-lg">
                 <p className="text-xl font-black">6 wk</p>
                 <p className="mt-1 text-sm font-bold uppercase leading-5">
                   target after approval
                 </p>
               </div>
-              <div className="bg-[#123962] p-4 text-white">
+              <div className="border-l-4 border-white bg-[#004ff9] p-4 text-white shadow-lg">
                 <p className="text-xl font-black">CMM</p>
                 <p className="mt-1 text-sm font-bold uppercase leading-5">
                   part inspection reports
@@ -114,7 +113,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#cfd6d9] px-0 sm:grid-cols-4">
           {proofPoints.map((point) => (
             <div key={point.value} className="bg-[#f8faf9] px-4 py-7 sm:px-6">
-              <p className="whitespace-nowrap text-3xl font-black tracking-tight text-[#1e5299] sm:text-4xl">
+              <p className="whitespace-nowrap text-3xl font-black tracking-tight text-[#004ff9] sm:text-4xl">
                 {point.value}
               </p>
               <p className="mt-3 max-w-44 text-base font-medium leading-6 text-[#777]">
@@ -128,7 +127,7 @@ export default function Home() {
       <section className="bg-[#eef1f2] py-18 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:items-center">
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#004ff9]">
               {anniversary.title}
             </p>
             <h2 className="mt-4 text-balance text-4xl font-black leading-tight text-[#222222] sm:text-5xl">
@@ -142,7 +141,7 @@ export default function Home() {
               <PrimaryLink href="/process">See the build path</PrimaryLink>
             </div>
           </div>
-          <div className="relative min-h-96 overflow-hidden bg-[#123962]">
+          <div className="relative min-h-96 overflow-hidden bg-[#004ff9]">
             <Image
               src="/omi/mold-construction-8.jpg"
               alt="Precision mold construction detail"
@@ -151,7 +150,7 @@ export default function Home() {
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <div
-              className="absolute bottom-0 left-0 h-32 w-56 bg-[#1660c4]"
+              className="absolute bottom-0 left-0 h-32 w-56 bg-[#BD1816]"
               style={{ clipPath: "polygon(0 0, 70% 100%, 0 100%)" }}
             />
           </div>
@@ -162,7 +161,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:items-end">
             <div>
-              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#004ff9]">
                 Full-lifecycle tooling partner
               </p>
               <h2 className="mt-4 text-balance text-4xl font-black leading-tight text-[#222222] sm:text-5xl">
@@ -181,15 +180,15 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="group bg-white p-6 transition hover:bg-[#123962]"
+                className="group bg-white p-6 transition hover:bg-[#004ff9]"
               >
-                <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+                <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-[#004ff9] transition group-hover:text-white">
                   {item.title}
                 </p>
                 <p className="mt-4 text-base leading-7 text-[#777] transition group-hover:text-white">
                   {item.text}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-[#222222] transition group-hover:text-[#e5402d]">
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-[#222222] transition group-hover:text-white">
                   Learn more <ArrowRight aria-hidden="true" size={18} />
                 </span>
               </Link>
@@ -202,7 +201,7 @@ export default function Home() {
 
               return (
                 <article key={pillar.title} className="border border-[#ddd] bg-white p-6 shadow-sm">
-                  <Icon aria-hidden="true" className="text-[#1e5299]" />
+                  <Icon aria-hidden="true" className="text-[#004ff9]" />
                   <h3 className="mt-6 text-2xl font-black text-[#222222]">{pillar.title}</h3>
                   <p className="mt-4 text-base leading-7 text-[#777]">{pillar.text}</p>
                 </article>
@@ -215,7 +214,7 @@ export default function Home() {
       <section className="bg-[#eef1f2] py-18 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#004ff9]">
               Explore OMI
             </p>
             <h2 className="mt-4 text-4xl font-black tracking-tight text-[#222222] sm:text-5xl">
@@ -231,12 +230,12 @@ export default function Home() {
                 <Link
                   key={route.href}
                   href={route.href}
-                  className="group border border-[#ddd] bg-[#f7f7f7] p-6 transition hover:border-[#e5402d] hover:bg-white"
+                  className="group border border-[#ddd] bg-[#f7f7f7] p-6 transition hover:border-[#BD1816] hover:bg-white"
                 >
-                  <Icon aria-hidden="true" className="text-[#e5402d]" />
+                  <Icon aria-hidden="true" className="text-[#BD1816]" />
                   <h3 className="mt-6 text-2xl font-black text-[#222222]">{route.title}</h3>
                   <p className="mt-3 text-base leading-7 text-[#777]">{route.text}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-[#1e5299]">
+                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-extrabold uppercase tracking-[0.12em] text-[#004ff9]">
                     Open page <ArrowRight aria-hidden="true" size={18} />
                   </span>
                 </Link>

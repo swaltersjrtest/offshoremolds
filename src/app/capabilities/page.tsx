@@ -30,7 +30,7 @@ export default function CapabilitiesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div className="max-w-3xl">
-              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#004ff9]">
                 What OMI builds
               </p>
               <h2 className="mt-4 text-4xl font-black tracking-tight text-[#222222] sm:text-5xl">
@@ -39,7 +39,7 @@ export default function CapabilitiesPage() {
             </div>
             <a
               href="mailto:information@offshoremolds.com?subject=Capabilities%20question"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-[#123962] px-5 text-sm font-extrabold uppercase tracking-[0.12em] text-[#123962] transition hover:bg-[#123962] hover:text-white"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-[#004ff9] px-5 text-sm font-extrabold uppercase tracking-[0.12em] text-[#004ff9] transition hover:bg-[#004ff9] hover:text-white"
             >
               Ask a tooling question <Mail aria-hidden="true" size={18} />
             </a>
@@ -62,10 +62,10 @@ export default function CapabilitiesPage() {
                   </div>
                   <div className="p-5">
                     <div className="flex items-center justify-between gap-3">
-                      <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#e5402d]">
+                      <p className="text-xs font-extrabold uppercase tracking-[0.16em] text-[#BD1816]">
                         {item.eyebrow}
                       </p>
-                      <Icon aria-hidden="true" size={20} className="text-[#1e5299]" />
+                      <Icon aria-hidden="true" size={20} className="text-[#004ff9]" />
                     </div>
                     <h3 className="mt-3 text-2xl font-black text-[#222222]">{item.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-[#777]">{item.text}</p>
@@ -80,7 +80,7 @@ export default function CapabilitiesPage() {
       <section className="bg-[#f7f7f7] py-18 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:items-center">
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#e5402d]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#BD1816]">
               Program range
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight text-[#222222] sm:text-5xl">

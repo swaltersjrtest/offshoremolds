@@ -47,7 +47,7 @@ export default function ProcessPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
-              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#e5402d]">
+              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#BD1816]">
                 Build path
               </p>
               <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">
@@ -66,7 +66,7 @@ export default function ProcessPage() {
                   key={step.title}
                   className="grid gap-5 border border-white/12 bg-white/[0.04] p-5 sm:grid-cols-[4rem_1fr]"
                 >
-                  <div className="flex h-14 w-14 items-center justify-center bg-[#e5402d] text-xl font-black text-white">
+                  <div className="flex h-14 w-14 items-center justify-center bg-[#BD1816] text-xl font-black text-white">
                     {String(index + 1).padStart(2, "0")}
                   </div>
                   <div>
@@ -83,7 +83,7 @@ export default function ProcessPage() {
       <section className="bg-white py-18 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#004ff9]">
               Control points
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight text-[#222222] sm:text-5xl">
@@ -97,7 +97,7 @@ export default function ProcessPage() {
 
               return (
                 <article key={item.title} className="border border-[#ddd] bg-[#f7f7f7] p-6">
-                  <Icon aria-hidden="true" className="text-[#e5402d]" />
+                  <Icon aria-hidden="true" className="text-[#BD1816]" />
                   <h3 className="mt-6 text-2xl font-black text-[#222222]">{item.title}</h3>
                   <p className="mt-4 text-base leading-7 text-[#777]">{item.text}</p>
                 </article>

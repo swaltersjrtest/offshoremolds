@@ -76,7 +76,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
           )}
         >
           {mainNav.map((item) => (
-            <Link key={item.href} href={item.href} className="transition hover:text-[#1e5299]">
+            <Link key={item.href} href={item.href} className="transition hover:text-[#004ff9]">
               {item.label}
             </Link>
           ))}
@@ -84,7 +84,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
         <Link
           href="/contact"
-          className="inline-flex min-h-12 items-center gap-2 bg-[#e5402d] px-5 pl-7 text-sm font-extrabold uppercase tracking-[0.08em] text-white shadow-sm transition hover:bg-[#d52e1b]"
+          className="inline-flex min-h-12 items-center gap-2 bg-[#BD1816] px-5 pl-7 text-sm font-extrabold uppercase tracking-[0.08em] text-white shadow-sm transition hover:brightness-90"
           style={{ clipPath: "polygon(18px 0, 100% 0, 100% 100%, 0 100%)" }}
         >
           <Phone aria-hidden="true" size={17} />
@@ -109,9 +109,9 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-white/20" />
-      <div className="absolute inset-0 w-full bg-[#1e5299] md:hidden" />
+      <div className="absolute inset-0 w-full bg-[#004ff9] md:hidden" />
       <div
-        className="absolute inset-y-0 left-0 hidden bg-[#1e5299] md:block md:w-[90%] lg:w-[76%] xl:w-[70%]"
+        className="absolute inset-y-0 left-0 hidden bg-[#004ff9] md:block md:w-[90%] lg:w-[76%] xl:w-[70%]"
         style={{ clipPath: "polygon(0 0, 86% 0, 100% 100%, 0 100%)" }}
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-12">
@@ -141,7 +141,7 @@ export function PrimaryLink({
   return (
     <Link
       href={href}
-      className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#e5402d] px-6 pl-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-[#d52e1b]"
+      className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#BD1816] px-6 pl-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:brightness-90"
       style={{ clipPath: "polygon(16px 0, 100% 0, 100% 100%, 0 100%)" }}
     >
       {children}
@@ -160,7 +160,7 @@ export function SecondaryLink({
   return (
     <Link
       href={href}
-      className="inline-flex min-h-12 items-center justify-center gap-2 border border-[#123962] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-[#123962] transition hover:bg-[#123962] hover:text-white"
+      className="inline-flex min-h-12 items-center justify-center gap-2 border border-[#004ff9] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-[#004ff9] transition hover:bg-[#004ff9] hover:text-white"
     >
       {children}
       <ArrowRight aria-hidden="true" size={18} />
@@ -172,7 +172,7 @@ export function ContactPanel() {
   return (
     <aside className="border border-[#ddd] bg-white p-6 text-[#222222] shadow-sm">
       <div className="flex items-center gap-3 border-b border-[#ddd] pb-5">
-        <Building2 aria-hidden="true" className="text-[#e5402d]" />
+        <Building2 aria-hidden="true" className="text-[#BD1816]" />
         <div>
           <h2 className="text-2xl font-black">Offshore Molds, Inc.</h2>
           <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#777]">
@@ -182,7 +182,7 @@ export function ContactPanel() {
       </div>
 
       <div className="mt-6 grid gap-5">
-        <a href={contactInfo.phoneHref} className="flex items-start gap-3 transition hover:text-[#e5402d]">
+        <a href={contactInfo.phoneHref} className="flex items-start gap-3 transition hover:text-[#BD1816]">
           <Phone aria-hidden="true" className="mt-1 shrink-0" size={20} />
           <span>
             <span className="block text-sm font-extrabold uppercase tracking-[0.14em] text-[#777]">
@@ -193,7 +193,7 @@ export function ContactPanel() {
         </a>
         <a
           href={`mailto:${contactInfo.generalEmail}`}
-          className="flex items-start gap-3 transition hover:text-[#e5402d]"
+          className="flex items-start gap-3 transition hover:text-[#BD1816]"
         >
           <Mail aria-hidden="true" className="mt-1 shrink-0" size={20} />
           <span>
@@ -205,7 +205,7 @@ export function ContactPanel() {
         </a>
         <a
           href={`mailto:${contactInfo.salesEmail}`}
-          className="flex items-start gap-3 transition hover:text-[#e5402d]"
+          className="flex items-start gap-3 transition hover:text-[#BD1816]"
         >
           <Mail aria-hidden="true" className="mt-1 shrink-0" size={20} />
           <span>
@@ -250,14 +250,14 @@ export function CtaBand({
   copy?: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#123962] px-4 py-16 text-white sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-[#004ff9] px-4 py-16 text-white sm:px-6 lg:px-8">
       <div
-        className="absolute bottom-0 right-0 h-32 w-64 bg-[#1660c4]"
+        className="absolute bottom-0 right-0 h-32 w-64 bg-[#BD1816]"
         style={{ clipPath: "polygon(35% 0, 100% 0, 100% 100%, 0 100%)" }}
       />
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 lg:flex-row lg:items-center">
         <div className="max-w-3xl">
-          <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#e5402d]">
+          <p className="inline-flex bg-[#BD1816] px-3 py-1 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
             Start the conversation
           </p>
           <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">{title}</h2>
@@ -266,7 +266,7 @@ export function CtaBand({
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
           <a
             href={contactInfo.rfqHref}
-            className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#e5402d] px-6 pl-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-[#d52e1b]"
+            className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#BD1816] px-6 pl-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:brightness-90"
             style={{ clipPath: "polygon(16px 0, 100% 0, 100% 100%, 0 100%)" }}
           >
             Email an RFQ <FileCheck2 aria-hidden="true" size={18} />
@@ -290,7 +290,7 @@ export function SiteFooter() {
         <p className="text-sm">Copyright 2026 Offshore Molds, Inc. Built by ZUVIX.NET</p>
         <div className="flex flex-wrap items-center gap-3 text-sm font-bold">
           {mainNav.map((item) => (
-            <Link key={item.href} href={item.href} className="text-white hover:text-[#e5402d]">
+            <Link key={item.href} href={item.href} className="text-white hover:text-[#BD1816]">
               {item.label}
             </Link>
           ))}

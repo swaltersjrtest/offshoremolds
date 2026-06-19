@@ -31,7 +31,7 @@ export default function ContactPage() {
       <section className="bg-[#f7f7f7] py-18 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:px-8">
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#e5402d]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#BD1816]">
               Quote conversation
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight text-[#222222] sm:text-5xl">
@@ -44,8 +44,8 @@ export default function ContactPage() {
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {rfqItems.map((item) => (
-                <div key={item} className="flex items-start gap-3 border-l-4 border-[#1e5299] bg-white px-4 py-3">
-                  <CheckCircle2 aria-hidden="true" size={20} className="mt-0.5 shrink-0 text-[#1e5299]" />
+                <div key={item} className="flex items-start gap-3 border-l-4 border-[#004ff9] bg-white px-4 py-3">
+                  <CheckCircle2 aria-hidden="true" size={20} className="mt-0.5 shrink-0 text-[#004ff9]" />
                   <p className="text-base font-semibold text-[#222222]">{item}</p>
                 </div>
               ))}
@@ -54,13 +54,13 @@ export default function ContactPage() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href={contactInfo.rfqHref}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] bg-[#e5402d] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-[#d52e1b]"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] bg-[#BD1816] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:brightness-90"
               >
                 Email an RFQ <FileCheck2 aria-hidden="true" size={18} />
               </a>
               <a
                 href={contactInfo.phoneHref}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-[#123962] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-[#123962] transition hover:bg-[#123962] hover:text-white"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-[#004ff9] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-[#004ff9] transition hover:bg-[#004ff9] hover:text-white"
               >
                 Call the U.S. office <Phone aria-hidden="true" size={18} />
               </a>
@@ -74,7 +74,7 @@ export default function ContactPage() {
       <section className="bg-white py-18 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:items-center">
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#004ff9]">
               Offices
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight text-[#222222] sm:text-5xl">

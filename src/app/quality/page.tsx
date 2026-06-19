@@ -54,7 +54,7 @@ export default function QualityPage() {
           </div>
 
           <div>
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#e5402d]">
+            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#BD1816]">
               Inspection and assurance
             </p>
             <h2 className="mt-4 text-4xl font-black leading-tight text-[#222222] sm:text-5xl">
@@ -68,8 +68,8 @@ export default function QualityPage() {
 
             <div className="mt-8 grid gap-3">
               {qualityItems.map((item) => (
-                <div key={item} className="flex items-start gap-3 border-l-4 border-[#1e5299] bg-[#f7f7f7] px-4 py-3">
-                  <CheckCircle2 aria-hidden="true" size={20} className="mt-0.5 shrink-0 text-[#1e5299]" />
+                <div key={item} className="flex items-start gap-3 border-l-4 border-[#004ff9] bg-[#f7f7f7] px-4 py-3">
+                  <CheckCircle2 aria-hidden="true" size={20} className="mt-0.5 shrink-0 text-[#004ff9]" />
                   <p className="text-base font-semibold text-[#222222]">{item}</p>
                 </div>
               ))}
@@ -82,7 +82,7 @@ export default function QualityPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#1e5299]">
+              <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#004ff9]">
                 Buyer assurance
               </p>
               <h2 className="mt-4 text-4xl font-black leading-tight text-[#222222] sm:text-5xl">
@@ -94,7 +94,7 @@ export default function QualityPage() {
               {faqs.map((faq) => (
                 <article key={faq.question} className="border border-[#ddd] bg-white p-6">
                   <h3 className="flex items-start gap-3 text-xl font-black text-[#222222]">
-                    <ShieldCheck aria-hidden="true" className="mt-1 shrink-0 text-[#e5402d]" size={22} />
+                    <ShieldCheck aria-hidden="true" className="mt-1 shrink-0 text-[#BD1816]" size={22} />
                     {faq.question}
                   </h3>
                   <p className="mt-3 text-base leading-7 text-[#777]">{faq.answer}</p>
