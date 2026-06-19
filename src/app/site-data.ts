@@ -62,7 +62,7 @@ export const proofPoints: ProofPoint[] = [
 export const anniversary = {
   value: "25",
   title: "Celebrating 25 years",
-  text: "Founded in 2001, OMI is marking 25 years of U.S.-managed offshore tooling support in 2026.",
+  text: "Founded in 2001, OMI is marking 25 years of offshore tooling support and building in 2026.",
 };
 
 export const pillars: IconItem[] = [
