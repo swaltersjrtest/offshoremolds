@@ -17,8 +17,8 @@ export default function QualityPage() {
         eyebrow="Quality Control"
         title="Checked To Run"
         copy="Materials, components, reports, sampling, and final teardown inspection are documented before the mold is released for shipment."
-        image="/omi/qc-1.jpg"
-        imageAlt="CMM inspection at Offshore Molds"
+        image="/omi/five-axis-polished-cavity.jpg"
+        imageAlt="Polished mold cavity surface after machining"
       />
 
       <section className="bg-white py-18 sm:py-24">
@@ -26,17 +26,17 @@ export default function QualityPage() {
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="relative h-80 overflow-hidden border border-[#ddd] sm:col-span-2">
               <Image
-                src="/omi/qc-1.jpg"
-                alt="CMM inspection at Offshore Molds"
+                src="/omi/five-axis-finished-tool.jpg"
+                alt="Finished polished mold tool ready for inspection"
                 fill
-                className="object-cover"
+                className="object-cover object-[55%_center]"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </div>
             <div className="relative h-56 overflow-hidden border border-[#ddd]">
               <Image
-                src="/omi/mold-inspection-1.jpg"
-                alt="Tooling inspection detail"
+                src="/omi/polished-components-closeup.png"
+                alt="Polished tool components inspection detail"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 25vw, 50vw"
@@ -44,8 +44,8 @@ export default function QualityPage() {
             </div>
             <div className="relative h-56 overflow-hidden border border-[#ddd]">
               <Image
-                src="/omi/mold-construction-8.jpg"
-                alt="Mold construction detail"
+                src="/omi/polished-tooling-plate.png"
+                alt="Finished polished tooling plate"
                 fill
                 className="object-cover"
                 sizes="(min-width: 1024px) 25vw, 50vw"

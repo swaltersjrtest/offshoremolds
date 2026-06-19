@@ -16,14 +16,14 @@ export default function Home() {
       <section className="relative isolate flex min-h-[72svh] items-end overflow-hidden bg-[#eef1f2] pt-20 lg:min-h-[76vh]">
         <SiteHeader variant="overlay" />
         <Image
-          src="/omi/slide-1.jpg"
-          alt="Offshore Molds tooling facility floor"
+          src="/omi/five-axis-large-tool-machining.jpg"
+          alt="Five-axis machining a large polished mold tool"
           fill
           priority
-          className="object-cover object-[68%_center]"
+          className="object-cover object-[72%_center]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-white/20" />
+        <div className="absolute inset-0 bg-black/15" />
         <div
           className="absolute inset-y-20 left-0 hidden bg-[#BD1816] md:block md:w-[70%]"
           style={{ clipPath: "polygon(0 0, 76% 0, 98% 100%, 0 100%)" }}
@@ -143,10 +143,10 @@ export default function Home() {
           </div>
           <div className="relative min-h-96 overflow-hidden bg-[#004ff9]">
             <Image
-              src="/omi/mold-construction-8.jpg"
-              alt="Precision mold construction detail"
+              src="/omi/five-axis-finished-tool.jpg"
+              alt="Finished polished mold tool after five-axis machining"
               fill
-              className="object-cover"
+              className="object-cover object-[55%_center]"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <div

@@ -24,8 +24,8 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Start An RFQ"
         copy="Send the project data, ask a tooling question, or call the U.S. office to talk through schedule, sampling, validation, and shipment needs."
-        image="/omi/slide-3.jpg"
-        imageAlt="Precision mold steel detail"
+        image="/omi/eight-core-mold-composite.jpg"
+        imageAlt="Eight-core mold tool running in a press"
       />
 
       <section className="bg-[#f7f7f7] py-18 sm:py-24">
@@ -87,10 +87,10 @@ export default function ContactPage() {
           </div>
           <div className="relative h-96 overflow-hidden border border-[#ddd]">
             <Image
-              src="/omi/shop-1.jpg"
-              alt="Offshore Molds tooling shop floor"
+              src="/omi/eight-core-mold-composite.jpg"
+              alt="Eight-core mold tooling machine detail"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>

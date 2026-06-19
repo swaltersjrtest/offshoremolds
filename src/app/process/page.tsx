@@ -39,8 +39,8 @@ export default function ProcessPage() {
         eyebrow="Process"
         title="Visible Handoffs"
         copy="A practical path from quote review to final inspection, built to remove offshore sourcing uncertainty before the mold leaves China."
-        image="/omi/slide-2.jpg"
-        imageAlt="Precision plastic injection mold tooling process"
+        image="/omi/five-axis-cutting-detail.jpg"
+        imageAlt="Five-axis cutting detail on a polished mold tool"
       />
 
       <section className="bg-[#313131] py-18 text-white sm:py-24">

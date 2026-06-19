@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     url: "https://www.offshoremolds.com",
     images: [
       {
-        url: "/omi/slide-2.jpg",
-        width: 1920,
-        height: 650,
-        alt: "Precision injection mold tooling by Offshore Molds",
+        url: "/omi/eight-core-mold-composite.jpg",
+        width: 1600,
+        height: 900,
+        alt: "Eight-core injection mold tooling by Offshore Molds",
       },
     ],
   },

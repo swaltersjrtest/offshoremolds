@@ -108,7 +108,7 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
         className="object-cover object-[68%_center]"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-white/20" />
+      <div className="absolute inset-0 bg-black/10" />
       <div className="absolute inset-0 w-full bg-[#004ff9] md:hidden" />
       <div
         className="absolute inset-y-0 left-0 hidden bg-[#004ff9] md:block md:w-[90%] lg:w-[76%] xl:w-[70%]"

@@ -22,8 +22,8 @@ export default function CapabilitiesPage() {
         eyebrow="Capabilities"
         title="Tooling Capacity"
         copy="Full-cycle plastic injection mold programs with design, moldflow, overseas build oversight, production-condition sampling, and U.S. project support."
-        image="/omi/custom-tools.jpg"
-        imageAlt="Custom plastic injection tooling at Offshore Molds"
+        image="/omi/five-axis-machining-head.jpg"
+        imageAlt="Five-axis machining head cutting a polished mold cavity"
       />
 
       <section className="bg-white py-18 sm:py-24">
