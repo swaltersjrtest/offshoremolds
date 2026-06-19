@@ -13,32 +13,33 @@ import {
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#eef1f2] text-[#222222]">
-      <section className="relative isolate flex min-h-[72svh] items-end overflow-hidden bg-[#eef1f2] pt-20 lg:min-h-[76vh]">
+      <section className="relative isolate flex min-h-[640px] items-end overflow-hidden bg-[#eef1f2] pt-20 lg:min-h-[660px]">
         <SiteHeader variant="overlay" />
         <Image
           src="/omi/five-axis-large-tool-machining.jpg"
           alt="Five-axis machining a large polished mold tool"
           fill
           priority
-          className="object-cover object-[72%_center]"
+          className="object-contain object-right-bottom"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/15" />
         <div
-          className="absolute inset-y-20 left-0 hidden bg-[#BD1816] md:block md:w-[68%] lg:w-[66%] xl:w-[64%]"
+          className="absolute inset-y-24 left-0 hidden bg-[#BD1816] md:block md:w-[58%] lg:w-[54%] xl:w-[50%]"
+          style={{ clipPath: "polygon(0 0, 74% 0, 96% 100%, 0 100%)" }}
+        />
+        <div className="absolute inset-y-24 left-0 w-full bg-[#004ff9]/95 md:hidden" />
+        <div
+          className="absolute inset-y-24 left-0 hidden bg-[#004ff9] md:block md:w-[56%] lg:w-[52%] xl:w-[48%]"
           style={{ clipPath: "polygon(0 0, 76% 0, 98% 100%, 0 100%)" }}
         />
-        <div
-          className="absolute inset-y-20 left-0 w-full bg-[#004ff9]/95 md:w-[66%] md:bg-[#004ff9] lg:w-[64%] xl:w-[62%]"
-          style={{ clipPath: "polygon(0 0, 78% 0, 100% 100%, 0 100%)" }}
-        />
 
-        <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-8 px-4 pb-8 pt-20 sm:px-6 md:grid-cols-[0.95fr_0.85fr] lg:px-8 lg:pb-12">
-          <div className="max-w-2xl text-white">
-            <div className="mb-5 inline-flex items-center border-l-4 border-white bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
-              U.S.-managed offshore tooling
+        <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-8 px-4 pb-8 pt-20 sm:px-6 md:grid-cols-[0.88fr_0.9fr] lg:px-8 lg:pb-12">
+          <div className="max-w-[34rem] text-white">
+            <div className="mb-5 inline-block max-w-full border-l-4 border-white bg-white/10 px-4 py-2 text-xs font-semibold uppercase leading-5 tracking-[0.18em] text-white backdrop-blur">
+              World Leader of Zero Tolerance Plastic Injection Molds in 6 Weeks
             </div>
-            <h1 className="text-balance text-4xl font-black uppercase leading-[1.02] sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance text-4xl font-black uppercase leading-[1.02] sm:text-5xl lg:text-[3.4rem]">
               Precision tooling.
               <br />
               Offshore speed.
@@ -73,7 +74,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hidden max-w-[22rem] gap-4 self-center justify-self-end md:grid">
+          <div className="hidden max-w-[20rem] self-center justify-self-end md:block">
             <div className="relative">
               <div
                 className="absolute -inset-4 bg-[#BD1816] shadow-2xl"
@@ -91,20 +92,6 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="border-l-4 border-white bg-[#BD1816] p-4 text-white shadow-lg">
-                <p className="text-xl font-black">6 wk</p>
-                <p className="mt-1 text-sm font-bold uppercase leading-5">
-                  target after approval
-                </p>
-              </div>
-              <div className="border-l-4 border-white bg-[#004ff9] p-4 text-white shadow-lg">
-                <p className="text-xl font-black">CMM</p>
-                <p className="mt-1 text-sm font-bold uppercase leading-5">
-                  part inspection reports
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -113,7 +100,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#cfd6d9] px-0 sm:grid-cols-4">
           {proofPoints.map((point) => (
             <div key={point.value} className="bg-[#f8faf9] px-4 py-7 sm:px-6">
-              <p className="whitespace-nowrap text-3xl font-black tracking-tight text-[#004ff9] sm:text-4xl">
+              <p className="text-2xl font-black tracking-tight text-[#004ff9] sm:text-3xl lg:text-4xl">
                 {point.value}
               </p>
               <p className="mt-3 max-w-44 text-base font-medium leading-6 text-[#777]">

@@ -33,10 +33,8 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
   return (
     <header
       className={cn(
-        "inset-x-0 top-0 z-30 border-b border-[#ddd] bg-white/95 shadow-sm backdrop-blur",
-        isOverlay
-          ? "absolute"
-          : "sticky",
+        "fixed inset-x-0 top-0 z-50 border-b border-[#ddd] shadow-sm backdrop-blur",
+        isOverlay ? "bg-white/95" : "bg-white",
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
@@ -69,7 +67,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
         <nav
           aria-label="Primary navigation"
           className={cn(
-            "hidden items-center gap-6 px-5 py-3 text-sm font-bold uppercase text-[#313131] md:flex",
+            "hidden shrink-0 items-center gap-6 px-5 py-3 text-sm font-bold uppercase text-[#313131] md:flex",
             isOverlay
               ? "bg-white/0"
               : "bg-white/0",
@@ -98,24 +96,24 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
 export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProps) {
   return (
-    <section className="relative isolate flex min-h-[390px] items-end overflow-hidden bg-white pt-20 md:min-h-[48vh]">
+    <section className="relative isolate flex min-h-[390px] items-end overflow-hidden bg-[#eef1f2] pt-20 md:min-h-[48vh]">
       <SiteHeader variant="overlay" />
       <Image
         src={image}
         alt={imageAlt}
         fill
         priority
-        className="object-cover object-[68%_center]"
+        className="object-contain object-right-bottom"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-black/10" />
       <div className="absolute inset-0 w-full bg-[#004ff9]/92 md:hidden" />
       <div
-        className="absolute inset-y-0 left-0 hidden bg-[#004ff9] md:block md:w-[84%] lg:w-[68%] xl:w-[60%] 2xl:w-[56%]"
-        style={{ clipPath: "polygon(0 0, 82% 0, 100% 100%, 0 100%)" }}
+        className="absolute inset-y-0 left-0 hidden bg-[#004ff9] md:block md:w-[74%] lg:w-[58%] xl:w-[52%] 2xl:w-[48%]"
+        style={{ clipPath: "polygon(0 0, 78% 0, 98% 100%, 0 100%)" }}
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-12">
-        <div className="max-w-lg">
+        <div className="max-w-[34rem]">
           <p className="inline-block border-l-4 border-white pl-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
             {eyebrow}
           </p>

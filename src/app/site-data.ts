@@ -42,8 +42,8 @@ export const contactInfo = {
 
 export const proofPoints: ProofPoint[] = [
   {
-    value: "6 weeks",
-    label: "target build time after design approval",
+    value: "6 Weeks to T1",
+    label: "target after design approval",
   },
   {
     value: "50-3500T",
