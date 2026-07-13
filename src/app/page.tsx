@@ -47,8 +47,9 @@ export default function Home() {
               U.S. control.
             </h1>
             <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-white sm:text-xl">
-              Offshore Molds builds plastic injection molds with the clear ownership,
-              documented validation, and fast handoff complex programs need.
+              Offshore Molds has been delivering, fast western standard SPI Molds for over 25
+              years. With clear ownership and service second to none our tools are designed, built
+              and proven to be unpacked and put in the press to run.
             </p>
 
             <div className="mt-6 max-w-56 overflow-hidden border-4 border-white bg-white shadow-2xl ring-2 ring-[#BD1816]/85 sm:max-w-64 md:hidden">
