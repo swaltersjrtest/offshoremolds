@@ -6,6 +6,7 @@ import {
   Clock3,
   FileCheck2,
   Mail,
+  Menu,
   MapPin,
   Phone,
 } from "lucide-react";
@@ -37,7 +38,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
         isOverlay ? "bg-white/95" : "bg-white",
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-3 py-3 sm:gap-4 sm:px-6 lg:px-8">
         <Link href="/" aria-label="Offshore Molds home" className="flex min-w-0 items-center gap-2 sm:gap-3">
           <span
             className={cn(
@@ -82,13 +83,48 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
         <Link
           href="/contact"
-          className="inline-flex min-h-12 items-center gap-2 bg-[#BD1816] px-5 pl-7 text-sm font-extrabold uppercase tracking-[0.08em] text-white shadow-sm transition hover:brightness-90"
+          className="hidden min-h-12 items-center gap-2 bg-[#BD1816] px-5 pl-7 text-sm font-extrabold uppercase tracking-[0.08em] text-white shadow-sm transition hover:brightness-90 md:inline-flex"
           style={{ clipPath: "polygon(18px 0, 100% 0, 100% 100%, 0 100%)" }}
         >
           <Phone aria-hidden="true" size={17} />
           <span className="hidden sm:inline">Start the conversation</span>
           <span className="sm:hidden">Contact</span>
         </Link>
+
+        <details className="group relative md:hidden">
+          <summary className="flex min-h-11 cursor-pointer list-none items-center justify-center gap-2 bg-[#BD1816] px-4 pl-6 text-xs font-extrabold uppercase tracking-[0.12em] text-white shadow-sm transition hover:brightness-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#004ff9] focus-visible:ring-offset-2 [&::-webkit-details-marker]:hidden">
+            <Menu aria-hidden="true" size={18} />
+            Menu
+          </summary>
+          <div className="fixed left-3 right-3 top-[4.75rem] z-[60] border border-[#d7dcde] bg-white p-3 text-[#222222] shadow-2xl">
+            <nav aria-label="Mobile navigation" className="grid gap-2">
+              {mainNav.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="flex min-h-11 items-center justify-between border border-[#e1e5e7] bg-[#f8faf9] px-4 text-sm font-extrabold uppercase tracking-[0.12em] transition hover:border-[#004ff9] hover:text-[#004ff9]"
+                >
+                  {item.label}
+                  <ArrowRight aria-hidden="true" size={16} />
+                </Link>
+              ))}
+            </nav>
+            <div className="mt-3 grid gap-2 border-t border-[#e1e5e7] pt-3">
+              <a
+                href={contactInfo.rfqHref}
+                className="flex min-h-11 items-center justify-center gap-2 bg-[#BD1816] px-4 text-sm font-extrabold uppercase tracking-[0.12em] text-white"
+              >
+                Email an RFQ <FileCheck2 aria-hidden="true" size={17} />
+              </a>
+              <a
+                href={contactInfo.phoneHref}
+                className="flex min-h-11 items-center justify-center gap-2 border border-[#004ff9] px-4 text-sm font-extrabold uppercase tracking-[0.12em] text-[#004ff9]"
+              >
+                Call OMI <Phone aria-hidden="true" size={17} />
+              </a>
+            </div>
+          </div>
+        </details>
       </div>
     </header>
   );
@@ -250,10 +286,10 @@ export function CtaBand({
   return (
     <section className="relative overflow-hidden bg-[#004ff9] px-4 py-16 text-white sm:px-6 lg:px-8">
       <div
-        className="absolute bottom-0 right-0 h-32 w-64 bg-[#BD1816]"
+        className="absolute bottom-0 right-0 hidden h-32 w-64 bg-[#BD1816] sm:block"
         style={{ clipPath: "polygon(35% 0, 100% 0, 100% 100%, 0 100%)" }}
       />
-      <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 lg:flex-row lg:items-center">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col justify-between gap-8 lg:flex-row lg:items-center">
         <div className="max-w-3xl">
           <p className="inline-flex bg-[#BD1816] px-3 py-1 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
             Start the conversation
@@ -264,14 +300,13 @@ export function CtaBand({
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
           <a
             href={contactInfo.rfqHref}
-            className="inline-flex min-h-12 items-center justify-center gap-2 bg-[#BD1816] px-6 pl-8 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:brightness-90"
-            style={{ clipPath: "polygon(16px 0, 100% 0, 100% 100%, 0 100%)" }}
+            className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[4px] bg-[#BD1816] px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:brightness-90 sm:w-auto"
           >
             Email an RFQ <FileCheck2 aria-hidden="true" size={18} />
           </a>
           <a
             href={contactInfo.phoneHref}
-            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[4px] border border-white/35 bg-white/10 px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-[#222222]"
+            className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[4px] border border-white/35 bg-white/10 px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-[#222222] sm:w-auto"
           >
             Call OMI <Phone aria-hidden="true" size={18} />
           </a>
@@ -283,15 +318,41 @@ export function CtaBand({
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#313131] px-4 py-8 text-white sm:px-6 lg:px-8">
-      <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm">Copyright 2026 Offshore Molds, Inc. Built by ZUVIX.NET</p>
-        <div className="flex flex-wrap items-center gap-3 text-sm font-bold">
-          {mainNav.map((item) => (
-            <Link key={item.href} href={item.href} className="text-white hover:text-[#BD1816]">
-              {item.label}
-            </Link>
-          ))}
+    <footer className="border-t-4 border-[#BD1816] bg-[#232323] px-4 py-8 text-white sm:px-6 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-6">
+        <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+          <Link href="/" aria-label="Offshore Molds home" className="flex items-center gap-3">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[4px] bg-white p-1 shadow-sm">
+              <Image
+                src="/omi/logo-white-bg.jpg"
+                alt="Offshore Molds logo"
+                width={1024}
+                height={1110}
+                className="h-full w-full object-contain"
+              />
+            </span>
+            <span className="text-sm font-extrabold uppercase tracking-[0.18em]">
+              Offshore Molds
+            </span>
+          </Link>
+
+          <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center sm:justify-end">
+            {mainNav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="bg-white/7 px-3 py-2 text-center text-sm font-extrabold uppercase tracking-[0.08em] text-white transition hover:bg-white hover:text-[#222222]"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <div className="border-t border-white/12 pt-5">
+          <p className="text-xs leading-6 text-white/68">
+            Copyright 2026 Offshore Molds, Inc. Built by ZUVIX.NET
+          </p>
         </div>
       </div>
     </footer>
