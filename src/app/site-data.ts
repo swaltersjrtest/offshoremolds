@@ -53,11 +53,11 @@ export const contactInfo = {
 export const proofPoints: ProofPoint[] = [
   {
     value: "6 Weeks to T1",
-    label: "target after design approval",
+    label: "Target after design approval",
   },
   {
     value: "50-3500T",
-    label: "plastic injection mold programs supported",
+    label: "Plastic injection mold programs supported",
   },
   {
     value: "500 - 1500T",

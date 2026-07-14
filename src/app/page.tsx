@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Ruler } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { CtaBand, PrimaryLink, SiteFooter, SiteHeader } from "./components/site-shell";
 import {
   anniversary,
@@ -66,12 +66,6 @@ export default function Home() {
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <PrimaryLink href="/contact">Start an RFQ</PrimaryLink>
-              <Link
-                href="/capabilities"
-                className="inline-flex min-h-12 items-center justify-center gap-2 border border-white/70 bg-white/10 px-6 text-sm font-extrabold uppercase tracking-[0.12em] text-white transition hover:bg-white hover:text-[#222222]"
-              >
-                See capabilities <Ruler aria-hidden="true" size={18} />
-              </Link>
             </div>
           </div>
 
@@ -100,7 +94,10 @@ export default function Home() {
       <section className="border-y border-[#cfd6d9] bg-[#e9edef]">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-[#cfd6d9] px-0 sm:grid-cols-4">
           {proofPoints.map((point) => (
-            <div key={point.value} className="bg-[#f8faf9] px-4 py-7 sm:px-6">
+            <div
+              key={point.value}
+              className="flex flex-col items-center bg-[#f8faf9] px-4 py-7 text-center sm:px-6"
+            >
               <p className="text-2xl font-black tracking-tight text-[#004ff9] sm:text-3xl lg:text-4xl">
                 {point.value}
               </p>
