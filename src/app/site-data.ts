@@ -22,8 +22,18 @@ export type ProofPoint = {
   label: string;
 };
 
+export type IndustryItem = {
+  title: string;
+  eyebrow: string;
+  icon: LucideIcon;
+  image: string;
+  text: string;
+  details: string[];
+};
+
 export const mainNav = [
   { label: "Capabilities", href: "/capabilities" },
+  { label: "Industries", href: "/industries" },
   { label: "Process", href: "/process" },
   { label: "Quality", href: "/quality" },
   { label: "Contact", href: "/contact" },
@@ -50,12 +60,12 @@ export const proofPoints: ProofPoint[] = [
     label: "plastic injection mold programs supported",
   },
   {
-    value: "2001",
-    label: "founded by experienced mold makers",
+    value: "500 - 1500T",
+    label: "Medium mold tonnage single to multicavity tool.",
   },
   {
-    value: "3 hr",
-    label: "minimum production-condition sampling run",
+    value: "1500T - 3500T",
+    label: "Large single to multicavity tools.",
   },
 ];
 
@@ -111,6 +121,57 @@ export const capabilities = [
     icon: Microscope,
     image: "/omi/sampling-validation.jpg",
     text: "Molds are sampled under normal molding conditions with process parameters, first articles, and supporting documentation.",
+  },
+];
+
+export const industries: IndustryItem[] = [
+  {
+    title: "Automotive",
+    eyebrow: "Interior, exterior, lighting, and underhood",
+    icon: Gauge,
+    image: "/omi/five-axis-polished-cavity.jpg",
+    text: "Plastic injection mold programs for visible and functional parts where fit, finish, and repeatability have to survive launch pressure.",
+    details: ["Class-A surfaces", "Complex shutoffs", "Launch timing support"],
+  },
+  {
+    title: "Consumer Products",
+    eyebrow: "Durable goods and molded assemblies",
+    icon: Boxes,
+    image: "/omi/polished-components.png",
+    text: "Tooling support for products with cosmetic expectations, frequent design revisions, and buyer-facing quality requirements.",
+    details: ["Cosmetic finish planning", "Multi-cavity tooling", "Documented samples"],
+  },
+  {
+    title: "Recreational",
+    eyebrow: "Outdoor, power sport, and lifestyle parts",
+    icon: Ruler,
+    image: "/omi/five-axis-finished-cavity.jpg",
+    text: "Molds for rugged plastic components where structure, texture, and visible surfaces need to line up before production starts.",
+    details: ["Large part geometry", "Texture-ready steel", "Sampling visibility"],
+  },
+  {
+    title: "Agriculture & Equipment",
+    eyebrow: "Utility parts and machine components",
+    icon: Factory,
+    image: "/omi/eight-core-mold-composite.jpg",
+    text: "Tooling for heavy-use molded parts with practical design requirements, robust construction, and clear approval checkpoints.",
+    details: ["Thick-wall considerations", "Serviceable designs", "Steel and component review"],
+  },
+  {
+    title: "Heavy Truck",
+    eyebrow: "Large-format molded parts",
+    icon: Wrench,
+    image: "/omi/five-axis-large-tool-machining.jpg",
+    text: "Support for big tools, large press programs, and molded parts that need coordinated machining, validation, and final handoff.",
+    details: ["1500T - 3500T programs", "Large tool machining", "Final teardown checks"],
+  },
+  {
+    title: "Industrial & Technical",
+    eyebrow: "Tight-tolerance functional plastic",
+    icon: ShieldCheck,
+    image: "/omi/moldflow-design.png",
+    text: "Mold programs for technical parts where risk needs to be removed early through moldflow, design review, and measured sampling.",
+    details: ["Moldflow review", "CMM-backed approval", "Process documentation"],
   },
 ];
 
@@ -170,6 +231,12 @@ export const homeRoutes = [
     href: "/capabilities",
     icon: Ruler,
     text: "See tooling capacity, moldflow support, sampling, and validation details.",
+  },
+  {
+    title: "Industries",
+    href: "/industries",
+    icon: Factory,
+    text: "Review the markets and part types OMI supports with offshore tooling programs.",
   },
   {
     title: "Process",

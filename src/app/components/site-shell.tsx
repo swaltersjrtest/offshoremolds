@@ -67,7 +67,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
         <nav
           aria-label="Primary navigation"
           className={cn(
-            "hidden shrink-0 items-center gap-6 px-5 py-3 text-sm font-bold uppercase text-[#313131] md:flex",
+            "hidden shrink-0 items-center gap-3 px-3 py-3 text-xs font-bold uppercase text-[#313131] md:flex lg:gap-5 lg:px-5 lg:text-sm",
             isOverlay
               ? "bg-white/0"
               : "bg-white/0",

@@ -210,7 +210,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {homeRoutes.map((route) => {
               const Icon = route.icon;
 
