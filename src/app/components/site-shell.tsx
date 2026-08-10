@@ -132,35 +132,39 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
 export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProps) {
   return (
-    <section className="relative isolate flex min-h-[390px] items-end overflow-hidden bg-[#eef1f2] pt-20 md:min-h-[48vh]">
+    <section className="omi-hero-motion relative isolate flex min-h-[440px] items-end overflow-hidden bg-[#061525] pt-20 md:min-h-[52vh]">
       <SiteHeader variant="overlay" />
       <Image
         src={image}
         alt={imageAlt}
         fill
         priority
-        className="object-contain object-[78%_bottom]"
+        className="omi-hero-image object-cover object-[58%_center]"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-black/10" />
-      <div className="absolute inset-0 w-full bg-[#004ff9]/92 md:hidden" />
+      <div className="absolute inset-0 bg-[#061525]/72" />
+      <div className="absolute inset-0 bg-[linear-gradient(105deg,#061525_0%,rgba(0,79,249,0.62)_46%,rgba(6,21,37,0.18)_100%)]" />
+      <div aria-hidden="true" className="omi-hero-grid absolute inset-0" />
+      <div aria-hidden="true" className="omi-hero-pulse absolute inset-0" />
+      <div aria-hidden="true" className="omi-hero-lightbar absolute inset-x-0 top-20" />
       <div
-        className="absolute inset-y-0 left-0 hidden bg-[#004ff9] md:block md:w-[82%] lg:w-[66%] xl:w-[60%] 2xl:w-[56%]"
-        style={{ clipPath: "polygon(0 0, 88% 0, 100% 100%, 0 100%)" }}
+        className="omi-hero-red-wedge absolute bottom-0 left-0 h-24 w-56 bg-[#BD1816]/90 md:h-32 md:w-72"
+        style={{ clipPath: "polygon(0 32%, 68% 100%, 0 100%)" }}
       />
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-12">
-        <div className="max-w-lg">
-          <p className="inline-block border-l-4 border-white pl-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-28 sm:px-6 lg:px-8 lg:pb-14">
+        <div className="max-w-2xl">
+          <p className="omi-intro-kicker inline-block border-l-4 border-[#BD1816] bg-white/8 px-4 py-2 text-sm font-extrabold uppercase leading-6 tracking-[0.18em] text-white backdrop-blur">
             {eyebrow}
           </p>
-          <h1 className="mt-5 text-balance text-4xl font-black uppercase leading-[1.02] text-white sm:text-6xl">
+          <h1 className="omi-intro-title mt-5 text-balance text-4xl font-black uppercase leading-[1.02] text-white sm:text-6xl">
             {title}
           </h1>
-          <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-white sm:text-xl">
+          <p className="omi-intro-copy mt-5 max-w-xl text-pretty text-lg font-medium leading-8 text-white/82 sm:text-xl">
             {copy}
           </p>
         </div>
       </div>
+      <div aria-hidden="true" className="omi-hero-progress absolute bottom-0 left-0 right-0 z-20" />
     </section>
   );
 }

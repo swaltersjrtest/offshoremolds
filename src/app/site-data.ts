@@ -32,9 +32,9 @@ export type IndustryItem = {
 };
 
 export const mainNav = [
-  { label: "Capabilities", href: "/capabilities" },
+  { label: "Products", href: "/capabilities" },
+  { label: "One Source", href: "/process" },
   { label: "Industries", href: "/industries" },
-  { label: "Process", href: "/process" },
   { label: "Quality", href: "/quality" },
   { label: "Contact", href: "/contact" },
 ];
@@ -99,28 +99,28 @@ export const capabilities = [
     eyebrow: "Concept to steel",
     icon: Wrench,
     image: "/omi/eight-core-mold-composite.jpg",
-    text: "Complex plastic injection molds designed, built, sampled, and documented for U.S. production expectations.",
+    text: "Complex plastic injection molds shaped from product data, reviewed for build risk, sampled, and documented for production expectations.",
   },
   {
     title: "Large Tools",
     eyebrow: "Up to 3500T",
     icon: Boxes,
     image: "/omi/five-axis-machining-head.jpg",
-    text: "Large-format programs managed through OMI's owned and partner tooling capacity in southern China.",
+    text: "Large-format programs managed through OMI's tooling capacity, China-based oversight, sampling review, and U.S. project communication.",
   },
   {
     title: "Moldflow & Design",
     eyebrow: "Early risk removal",
     icon: Gauge,
     image: "/omi/moldflow-design.png",
-    text: "In-house design and moldflow teams review manufacturability, material behavior, and tooling strategy before steel is cut.",
+    text: "Design and moldflow review connect material behavior, cooling, shutoffs, cavitation, and tooling strategy before steel is cut.",
   },
   {
     title: "Sampling & Validation",
     eyebrow: "Run it first",
     icon: Microscope,
     image: "/omi/sampling-validation.jpg",
-    text: "Molds are sampled under normal molding conditions with process parameters, first articles, and supporting documentation.",
+    text: "Molds are sampled under normal molding conditions with process parameters, first articles, inspection feedback, and release documentation.",
   },
 ];
 
@@ -177,24 +177,24 @@ export const industries: IndustryItem[] = [
 
 export const processSteps = [
   {
-    title: "Quote & Program Review",
-    text: "OMI reviews part data, press requirements, tolerances, material, timing, and sourcing assumptions.",
+    title: "Program Review",
+    text: "OMI reviews part data, press requirements, material, tolerances, cosmetics, timing, and tooling assumptions before the mold path is framed.",
   },
   {
     title: "Moldflow & 3D Design",
-    text: "Designers and moldflow technicians refine the tool concept and submit 3D design for customer approval.",
+    text: "Design and moldflow review refine the tool concept, cooling approach, cavitation, steel decisions, and 3D design package for customer approval.",
   },
   {
-    title: "Tool Build",
-    text: "Steel, components, machining, and assembly move through daily oversight by OMI's China-based team.",
+    title: "Tool Build & Assembly",
+    text: "Steel, components, machining, bench work, and assembly move through direct oversight by OMI's China-based team.",
   },
   {
     title: "Sampling & FAI",
-    text: "Tools are sampled for a minimum of three hours, with process sheets and first article inspection reports.",
+    text: "Tools are sampled under production conditions with process sheets, first article inspection reports, and reviewable sample feedback.",
   },
   {
-    title: "Final Inspection",
-    text: "The mold is disassembled, measured, reviewed by mold inspectors, reassembled, protected, and prepared to ship.",
+    title: "Final Teardown & Release",
+    text: "The mold is disassembled, measured, reviewed by mold inspectors, reassembled, protected, and prepared for shipment after release.",
   },
 ];
 
@@ -227,22 +227,22 @@ export const faqs = [
 
 export const homeRoutes = [
   {
-    title: "Capabilities",
+    title: "Products",
     href: "/capabilities",
     icon: Ruler,
     text: "See tooling capacity, moldflow support, sampling, and validation details.",
+  },
+  {
+    title: "One Source",
+    href: "/process",
+    icon: ClipboardCheck,
+    text: "Follow the managed path from quote review through final inspection and shipment.",
   },
   {
     title: "Industries",
     href: "/industries",
     icon: Factory,
     text: "Review the markets and part types OMI supports with offshore tooling programs.",
-  },
-  {
-    title: "Process",
-    href: "/process",
-    icon: ClipboardCheck,
-    text: "Follow the path from quote review through final inspection and shipment.",
   },
   {
     title: "Quality",
