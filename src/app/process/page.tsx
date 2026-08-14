@@ -22,6 +22,11 @@ const checkpoints = [
     text: "Design approval, schedule updates, moldflow review, and milestone checklists keep decisions visible before they become expensive.",
   },
   {
+    title: "Local supply network",
+    icon: Gauge,
+    text: "Key tooling suppliers and partner resources are concentrated within roughly a 25-mile radius, reducing backorder exposure and keeping the build path moving.",
+  },
+  {
     title: "Sampling before release",
     icon: FileCheck2,
     text: "Molds are run under normal molding conditions with process sheets, first articles, and inspection reports supplied for approval.",
@@ -59,8 +64,24 @@ export default function ProcessPage() {
               OMI brings the pieces together: product review, moldflow, tool design, China-based
               build oversight, production-condition sampling, inspection documentation, final
               teardown, and shipment preparation. Each phase feeds the next instead of disappearing
-              into a separate sourcing lane.
+              into a separate sourcing lane. The result is a smoother offshore build process, helped
+              by logistics partners and nearby tooling suppliers that keep critical resources close
+              to the work instead of waiting on distant backorder channels.
             </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <div className="border border-white/14 bg-white/8 p-4">
+                <p className="text-3xl font-black text-white">25 mi</p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-white/72">
+                  approximate radius for key suppliers and partner resources
+                </p>
+              </div>
+              <div className="border border-white/14 bg-white/8 p-4">
+                <p className="text-3xl font-black text-white">Seamless</p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-white/72">
+                  fewer sourcing delays between design, build, sampling, and release
+                </p>
+              </div>
+            </div>
             <div className="mt-8">
               <PrimaryLink href="/contact">Start an RFQ</PrimaryLink>
             </div>

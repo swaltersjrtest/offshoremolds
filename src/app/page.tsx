@@ -281,9 +281,24 @@ export default function Home() {
             <p className="mt-5 text-lg leading-8 text-white/76">
               At OMI, you get experienced guidance, documented decisions, and mold-building
               capacity through one managed channel. Product data, simulation, design, tool build,
-              sampling, inspection, teardown, and shipment are connected instead of treated as
-              separate handoffs.
+              sampling, inspection, teardown, and shipment stay connected through a supply network
+              built for speed. Key tooling suppliers and partner resources are concentrated within
+              roughly a 25-mile radius, helping reduce backorder delays and keep each build moving.
             </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <div className="border border-white/14 bg-white/8 p-4">
+                <p className="text-3xl font-black text-white">25 mi</p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-white/72">
+                  supply network radius for key tooling resources
+                </p>
+              </div>
+              <div className="border border-white/14 bg-white/8 p-4">
+                <p className="text-3xl font-black text-white">Less Wait</p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-white/72">
+                  fewer supply handoffs and less exposure to backorder parts
+                </p>
+              </div>
+            </div>
             <div className="mt-8">
               <PrimaryLink href="/process">More about One Source</PrimaryLink>
             </div>
