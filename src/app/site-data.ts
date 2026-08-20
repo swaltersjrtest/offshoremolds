@@ -43,9 +43,9 @@ export const contactInfo = {
   phone: "303-421-0712",
   phoneHref: "tel:3034210712",
   generalEmail: "information@offshoremolds.com",
-  salesEmail: "bstone@offshoremolds.com",
+  salesEmail: "sales@offshoremolds.com",
   rfqHref:
-    "mailto:bstone@offshoremolds.com?subject=Tooling%20RFQ&body=Project%20name:%0APart%20files:%0ATarget%20press%20size:%0AMaterial:%0AAnnual%20volume:%0ACritical%20tolerances:%0ALaunch%20timing:%0A",
+    "mailto:sales@offshoremolds.com?subject=Tooling%20RFQ&body=Project%20name:%0APart%20files:%0ATarget%20press%20size:%0AMaterial:%0AAnnual%20volume:%0ACritical%20tolerances:%0ALaunch%20timing:%0A",
   usOffice: ["4251 Kipling St, Suite 420", "Wheat Ridge, CO 80033"],
   chinaOffice: ["Huang Jiang Town, Dongguan", "+(86 769) 82330086"],
 };
@@ -193,7 +193,7 @@ export const processSteps = [
 ];
 
 export const qualityItems = [
-  "Domestic or Finkl P-20 and H-13 steel options",
+  "Domestic and Imported steel options",
   "DME or Progressive equivalent standard components",
   "CMM first article inspection against customer drawings",
   "Detailed checklists for major tooling milestones",
