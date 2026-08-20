@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
-  CheckCircle2,
   ClipboardCheck,
   Gauge,
   Layers3,
@@ -15,7 +14,7 @@ import { industries } from "../site-data";
 export const metadata: Metadata = {
   title: "Industries Served | Offshore Molds",
   description:
-    "See the industries Offshore Molds supports with plastic injection mold programs, from automotive and consumer products to heavy truck, agriculture, and technical industrial parts.",
+    "See the recreation, consumer product, medical, agriculture, heavy truck, and technical industrial plastic injection mold programs Offshore Molds supports.",
 };
 
 const programSignals = [
@@ -42,9 +41,9 @@ export default function IndustriesPage() {
       <PageHero
         eyebrow="Industries"
         title="Molds for parts the market has to trust."
-        copy="OMI supports visible, functional, technical, and large-format plastic injection mold programs where speed only matters if the tool arrives ready to prove itself."
-        image="/omi/five-axis-finished-tool.jpg"
-        imageAlt="Finished polished injection mold tool for demanding production programs"
+        copy="OMI supports recreation, consumer product, medical, agriculture, heavy truck, and technical molded part programs where speed only matters if the finished parts prove themselves."
+        image="/omi/industry-recreation-atv-owner.jpg"
+        imageAlt="Generic ATV vehicle representing recreation molded part programs"
       />
 
       <section className="bg-[#061525] py-18 text-white sm:py-24">
@@ -54,12 +53,13 @@ export default function IndustriesPage() {
               Built around the part
             </p>
             <h2 className="mt-6 text-balance text-4xl font-black uppercase leading-tight sm:text-5xl">
-              Different markets. Same need for clean steel and visible proof.
+              Different markets. Same need for durable plastic and visible proof.
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/76">
-              Automotive launch pressure, consumer-product cosmetics, heavy-truck scale, and
-              technical industrial requirements all create different tooling risks. OMI keeps those
-              risks visible before steel is released and before the tool is packed.
+              Recreation exposure, consumer-product cosmetics, medical-equipment fit, agriculture
+              durability, heavy-truck scale, and technical industrial requirements all create
+              different molded-part risks. OMI keeps those risks visible before the tool is released
+              and before production needs to depend on it.
             </p>
             <div className="mt-8">
               <Link
@@ -73,14 +73,14 @@ export default function IndustriesPage() {
 
           <div className="omi-motion-stage relative min-h-[32rem] overflow-hidden bg-[#061525] shadow-2xl">
             <Image
-              src="/omi/eight-core-mold-composite.jpg"
-              alt="Eight-core injection mold tooling prepared for an industrial program"
+              src="/omi/industry-consumer-products-owner.jpg"
+              alt="Generic blender and trash container examples of molded consumer products"
               fill
               className="omi-reel-image omi-reel-image-one object-cover object-[45%_center]"
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Image
-              src="/omi/five-axis-polished-cavity.jpg"
+              src="/omi/industry-agriculture-tractor-owner.jpg"
               alt=""
               fill
               aria-hidden="true"
@@ -88,7 +88,7 @@ export default function IndustriesPage() {
               sizes="(min-width: 1024px) 50vw, 100vw"
             />
             <Image
-              src="/omi/polished-components.png"
+              src="/omi/industry-heavy-truck-owner.jpg"
               alt=""
               fill
               aria-hidden="true"
@@ -117,13 +117,16 @@ export default function IndustriesPage() {
                 Industry-ready tooling
               </p>
               <h2 className="mt-4 text-balance text-4xl font-black uppercase leading-tight text-[#222222] sm:text-5xl">
-                The mold strategy changes with the part.
+                Built for recreation, medical, agriculture, consumer, and technical programs.
               </h2>
             </div>
             <p className="max-w-3xl text-lg leading-8 text-[#666]">
-              OMI is not trying to force every market into one mold template. The build plan changes
-              around cosmetic surfaces, structural loads, tool size, cavitation, material behavior,
-              and the production environment that will receive the mold.
+              OMI is one of the leading manufacturers of plastic injection molds for ATV, UTV, and
+              personal watercraft programs, with support across medical equipment, consumer goods,
+              agriculture, heavy truck, and technical-industrial markets that need the same speed
+              and discipline. Each build plan changes around cosmetic surfaces, structural loads,
+              outdoor exposure, tool size, material behavior, and the production environment that
+              will receive the mold.
             </p>
           </div>
 
@@ -175,8 +178,9 @@ export default function IndustriesPage() {
                   <div className="relative h-64 overflow-hidden bg-[#061525]">
                     <Image
                       src={industry.image}
-                      alt={`${industry.title} injection mold tooling support by Offshore Molds`}
+                      alt={`${industry.title} molded product examples supported by Offshore Molds`}
                       fill
+                      loading="eager"
                       className="object-cover object-[45%_center] transition duration-500 group-hover:scale-105"
                       sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
                     />
@@ -194,21 +198,6 @@ export default function IndustriesPage() {
                       {industry.title}
                     </h3>
                     <p className="mt-3 text-base leading-7 text-[#666]">{industry.text}</p>
-
-                    <div className="mt-6 grid gap-3 border-t border-[#d7dcde] pt-5">
-                      {industry.details.map((detail) => (
-                        <div key={detail} className="flex items-start gap-3">
-                          <CheckCircle2
-                            aria-hidden="true"
-                            size={18}
-                            className="mt-1 shrink-0 text-[#004ff9]"
-                          />
-                          <span className="text-sm font-bold leading-6 text-[#313131]">
-                            {detail}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
                   </div>
                 </article>
               );

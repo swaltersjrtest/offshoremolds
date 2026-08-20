@@ -5,6 +5,7 @@ import {
   ClipboardCheck,
   Factory,
   Gauge,
+  HeartPulse,
   Microscope,
   Ruler,
   ShieldCheck,
@@ -28,7 +29,6 @@ export type IndustryItem = {
   icon: LucideIcon;
   image: string;
   text: string;
-  details: string[];
 };
 
 export const mainNav = [
@@ -126,52 +126,46 @@ export const capabilities = [
 
 export const industries: IndustryItem[] = [
   {
-    title: "Automotive",
-    eyebrow: "Interior, exterior, lighting, and underhood",
+    title: "Recreation",
+    eyebrow: "ATV, UTV, and personal watercraft programs",
     icon: Gauge,
-    image: "/omi/five-axis-polished-cavity.jpg",
-    text: "Plastic injection mold programs for visible and functional parts where fit, finish, and repeatability have to survive launch pressure.",
-    details: ["Class-A surfaces", "Complex shutoffs", "Launch timing support"],
+    image: "/omi/industry-recreation-atv-owner.jpg",
+    text: "OMI supports recreation vehicle and watercraft programs with tooling for rugged molded parts where fit, texture, durability, outdoor exposure, and repeatable production matter.",
   },
   {
     title: "Consumer Products",
-    eyebrow: "Durable goods and molded assemblies",
+    eyebrow: "Trash cans, blenders, and molded goods",
     icon: Boxes,
-    image: "/omi/polished-components.png",
-    text: "Tooling support for products with cosmetic expectations, frequent design revisions, and buyer-facing quality requirements.",
-    details: ["Cosmetic finish planning", "Multi-cavity tooling", "Documented samples"],
+    image: "/omi/industry-consumer-products-owner.jpg",
+    text: "Tooling support for everyday molded products such as trash containers, blender housings, appliance parts, and durable goods with buyer-facing quality requirements.",
   },
   {
-    title: "Recreational",
-    eyebrow: "Outdoor, power sport, and lifestyle parts",
-    icon: Ruler,
-    image: "/omi/five-axis-finished-cavity.jpg",
-    text: "Molds for rugged plastic components where structure, texture, and visible surfaces need to line up before production starts.",
-    details: ["Large part geometry", "Texture-ready steel", "Sampling visibility"],
+    title: "Medical",
+    eyebrow: "Beds, equipment, and molded medical components",
+    icon: HeartPulse,
+    image: "/omi/industry-medical-bed-owner.jpg",
+    text: "Tooling support for medical equipment components such as adjustable bed structures, covers, rails, housings, and functional plastic parts that need consistent fit and repeatable production.",
   },
   {
     title: "Agriculture & Equipment",
-    eyebrow: "Utility parts and machine components",
+    eyebrow: "Tractor, utility, and equipment plastics",
     icon: Factory,
-    image: "/omi/eight-core-mold-composite.jpg",
-    text: "Tooling for heavy-use molded parts with practical design requirements, robust construction, and clear approval checkpoints.",
-    details: ["Thick-wall considerations", "Serviceable designs", "Steel and component review"],
+    image: "/omi/industry-agriculture-tractor-owner.jpg",
+    text: "Molds for agriculture and equipment components that need robust plastic construction, outdoor durability, clean fit, and practical service-life performance.",
   },
   {
     title: "Heavy Truck",
     eyebrow: "Large-format molded parts",
     icon: Wrench,
-    image: "/omi/five-axis-large-tool-machining.jpg",
-    text: "Support for big tools, large press programs, and molded parts that need coordinated machining, validation, and final handoff.",
-    details: ["1500T - 3500T programs", "Large tool machining", "Final teardown checks"],
+    image: "/omi/industry-heavy-truck-owner.jpg",
+    text: "Support for truck-related molded components where large geometry, repeatability, structural performance, and final handoff have to stay aligned.",
   },
   {
-    title: "Industrial & Technical",
-    eyebrow: "Tight-tolerance functional plastic",
+    title: "Technical & Industrial",
+    eyebrow: "Fiber enclosures, ice machines, and housings",
     icon: ShieldCheck,
-    image: "/omi/moldflow-design.png",
-    text: "Mold programs for technical parts where risk needs to be removed early through moldflow, design review, and measured sampling.",
-    details: ["Moldflow review", "CMM-backed approval", "Process documentation"],
+    image: "/omi/industry-technical-industrial-owner.jpg",
+    text: "Mold programs for fiber enclosure boxes, commercial ice-machine components, technical housings, power-tool components, vacuum products, and functional plastic parts with measurable fit requirements.",
   },
 ];
 
