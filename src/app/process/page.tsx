@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ClipboardCheck, FileCheck2, Gauge, ShieldCheck } from "lucide-react";
 import { CtaBand, PageHero, PrimaryLink, SiteFooter } from "../components/site-shell";
 import { processSteps } from "../site-data";
 
@@ -9,34 +8,6 @@ export const metadata: Metadata = {
   description:
     "Review Offshore Molds' One Source process from quote review and moldflow through design, tool build, sampling, first article inspection, final teardown, and shipment approval.",
 };
-
-const checkpoints = [
-  {
-    title: "Early technical review",
-    icon: Gauge,
-    text: "Part data, material, press requirements, tolerances, cosmetic expectations, and launch timing are reviewed before the tool concept is finalized.",
-  },
-  {
-    title: "Documented approvals",
-    icon: ClipboardCheck,
-    text: "Design approval, schedule updates, moldflow review, and milestone checklists keep decisions visible before they become expensive.",
-  },
-  {
-    title: "Local supply network",
-    icon: Gauge,
-    text: "Key tooling suppliers and partner resources are concentrated within roughly a 25-mile radius, reducing backorder exposure and keeping the build path moving.",
-  },
-  {
-    title: "Sampling before release",
-    icon: FileCheck2,
-    text: "Molds are run under normal molding conditions with process sheets, first articles, and inspection reports supplied for approval.",
-  },
-  {
-    title: "Final teardown check",
-    icon: ShieldCheck,
-    text: "The mold is disassembled, measured, inspected, reassembled, protected, and prepared for shipment after customer release.",
-  },
-];
 
 const loopSteps = ["Review", "Design", "Build", "Sample", "Inspect", "Ship"];
 
@@ -167,40 +138,9 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      <section className="bg-white py-18 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="text-sm font-extrabold uppercase tracking-[0.18em] text-[#BD1816]">
-              Control points
-            </p>
-            <h2 className="mt-4 text-balance text-4xl font-black uppercase leading-tight text-[#222222] sm:text-5xl">
-              The right proof at the right point in the build.
-            </h2>
-          </div>
-
-          <div className="mt-12 grid gap-px bg-[#d7dcde] md:grid-cols-2 lg:grid-cols-4">
-            {checkpoints.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <article key={item.title} className="group bg-white p-6 transition hover:bg-[#004ff9]">
-                  <Icon aria-hidden="true" className="text-[#BD1816] transition group-hover:text-white" size={30} />
-                  <h3 className="mt-6 text-2xl font-black text-[#222222] transition group-hover:text-white">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 text-base leading-7 text-[#666] transition group-hover:text-white/84">
-                    {item.text}
-                  </p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       <CtaBand
         title="Put the schedule and proof points on the table early."
-        copy="Bring OMI in before steel is committed so the team can review timing, build assumptions, sampling requirements, and final approval expectations."
+        copy="Bring OMI in early so the team can review timing, build assumptions, and expectations."
       />
       <SiteFooter />
     </main>
