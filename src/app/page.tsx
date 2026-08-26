@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { CtaBand, PrimaryLink, SiteFooter, SiteHeader } from "./components/site-shell";
-import { homeRoutes, proofPoints } from "./site-data";
+import { homeRoutes, proofPoints, siteTagline } from "./site-data";
 
 export default function Home() {
   return (
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto grid min-h-[600px] max-w-7xl gap-10 px-4 pb-12 pt-20 sm:px-6 lg:grid-cols-[1fr_20rem] lg:items-end lg:px-8">
           <div className="max-w-4xl">
             <p className="omi-intro-kicker inline-flex border-l-4 border-[#BD1816] bg-white/10 px-4 py-2 text-xs font-extrabold uppercase leading-5 tracking-[0.18em] text-white backdrop-blur">
-              World Leader of Zero Tolerance Plastic Injection Molds in 6 Weeks
+              {siteTagline}
             </p>
             <h1 className="omi-intro-title mt-7 text-balance text-5xl font-black uppercase leading-[0.98] text-white sm:text-6xl lg:text-[5.1rem]">
               OMI - Fast tooling.

@@ -10,7 +10,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import { contactInfo, mainNav } from "../site-data";
+import { contactInfo, mainNav, siteTagline } from "../site-data";
 
 type HeaderProps = {
   variant?: "overlay" | "solid";
@@ -153,7 +153,10 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-28 sm:px-6 lg:px-8 lg:pb-14">
         <div className="max-w-2xl">
-          <p className="omi-intro-kicker inline-block border-l-4 border-[#BD1816] bg-white/8 px-4 py-2 text-sm font-extrabold uppercase leading-6 tracking-[0.18em] text-white backdrop-blur">
+          <p className="omi-intro-kicker inline-flex max-w-2xl border-l-4 border-[#BD1816] bg-white/10 px-4 py-2 text-xs font-extrabold uppercase leading-5 tracking-[0.18em] text-white backdrop-blur">
+            {siteTagline}
+          </p>
+          <p className="omi-intro-kicker mt-4 inline-block border-l-4 border-[#BD1816] bg-white/8 px-4 py-2 text-sm font-extrabold uppercase leading-6 tracking-[0.18em] text-white backdrop-blur">
             {eyebrow}
           </p>
           <h1 className="omi-intro-title mt-5 text-balance text-4xl font-black uppercase leading-[1.02] text-white sm:text-6xl">

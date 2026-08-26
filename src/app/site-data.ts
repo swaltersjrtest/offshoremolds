@@ -39,6 +39,8 @@ export const mainNav = [
   { label: "Contact", href: "/contact" },
 ];
 
+export const siteTagline = "World Leader of Zero Tolerance Plastic Injection Molds in 6 Weeks";
+
 export const contactInfo = {
   phone: "303-421-0712",
   phoneHref: "tel:3034210712",
@@ -53,7 +55,7 @@ export const contactInfo = {
 export const proofPoints: ProofPoint[] = [
   {
     value: "6 Weeks to T1",
-    label: "Target after design approval",
+    label: "After design approval",
   },
   {
     value: "50-3500T",
