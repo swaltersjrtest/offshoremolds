@@ -100,12 +100,12 @@ export default function Home() {
           {proofPoints.map((point) => (
             <div
               key={point.value}
-              className="omi-proof-cell flex min-h-36 flex-col items-center justify-center bg-white px-4 py-7 text-center sm:px-6"
+              className="omi-proof-cell grid min-h-40 grid-rows-[3.25rem_auto] justify-items-center bg-white px-4 py-7 text-center sm:min-h-44 sm:grid-rows-[3.75rem_auto] sm:px-5 lg:px-6"
             >
-              <p className="omi-proof-value text-2xl font-black tracking-tight text-[#004ff9] sm:text-3xl lg:text-4xl">
+              <p className="omi-proof-value relative z-10 flex h-full items-end text-center text-2xl font-black leading-none tracking-tight text-[#004ff9] sm:text-3xl lg:text-4xl">
                 {point.value}
               </p>
-              <p className="mt-3 max-w-44 text-base font-medium leading-6 text-[#666]">
+              <p className="relative z-10 mt-4 max-w-52 text-center text-sm font-semibold leading-6 text-[#666] sm:text-base">
                 {point.label}
               </p>
             </div>
