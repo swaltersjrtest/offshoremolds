@@ -149,7 +149,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#eef1f2] py-18 sm:py-24">
+      <section className="bg-[#eef1f2] pt-18 sm:pt-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="border-l-4 border-[#BD1816] bg-white px-6 py-6 shadow-sm sm:px-8">
+            <p className="max-w-5xl text-lg font-semibold leading-8 text-[#3f4548]">
+              OMI was founded in 2001 by Mold Makers, each one having over 43 years of
+              experience in the industry. The U.S. headquarters is located in Wheat Ridge,
+              Colorado, and the International Headquarters is located in Dongguan, China. All of
+              our guys in the OMI office have at least 30 years of tooling experience. Everything
+              runs thru us, we are your ONE SOURCE.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#eef1f2] pb-18 pt-12 sm:pb-24 sm:pt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
             <div>
@@ -190,15 +204,6 @@ export default function Home() {
                 </Link>
               );
             })}
-          </div>
-
-          <div className="mt-8 border-l-4 border-[#BD1816] bg-white px-6 py-6 shadow-sm sm:px-8">
-            <p className="max-w-5xl text-lg font-semibold leading-8 text-[#3f4548]">
-              OMI was founded in 2001 by Mold Makers, each one having over 43 years of experience in
-              the industry. The U.S. headquarters is located in Wheat Ridge, Colorado with all of our
-              guys in the OMI office having at least 30 years of tooling experience. Everything runs
-              thru us, we are your ONE SOURCE.
-            </p>
           </div>
         </div>
       </section>

@@ -13,7 +13,6 @@ export default function QualityPage() {
   return (
     <main className="min-h-screen bg-[#eef1f2] text-[#222222]">
       <PageHero
-        eyebrow="Quality"
         title="Proof before the mold leaves."
         copy="Materials, components, sampling, CMM inspection, checklists, and final teardown review are documented before OMI releases a mold for shipment."
         image="/omi/five-axis-polished-cavity.jpg"

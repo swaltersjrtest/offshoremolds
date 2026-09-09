@@ -20,7 +20,6 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#eef1f2] text-[#222222]">
       <PageHero
-        eyebrow="Contact"
         title="Build strong tooling together."
         copy="Send the project data, ask a tooling question, or call the U.S. office to talk through schedule, sampling, validation, and shipment needs."
         image="/omi/eight-core-mold-composite.jpg"

@@ -11,13 +11,13 @@ import {
   Phone,
 } from "lucide-react";
 import { contactInfo, mainNav, siteTagline } from "../site-data";
+import { ActiveNavLink } from "./active-nav-link";
 
 type HeaderProps = {
   variant?: "overlay" | "solid";
 };
 
 type PageHeroProps = {
-  eyebrow: string;
   title: string;
   copy: string;
   image: string;
@@ -75,9 +75,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
           )}
         >
           {mainNav.map((item) => (
-            <Link key={item.href} href={item.href} className="transition hover:text-[#004ff9]">
-              {item.label}
-            </Link>
+            <ActiveNavLink key={item.href} item={item} />
           ))}
         </nav>
 
@@ -99,14 +97,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
           <div className="fixed left-3 right-3 top-[4.75rem] z-[60] border border-[#d7dcde] bg-white p-3 text-[#222222] shadow-2xl">
             <nav aria-label="Mobile navigation" className="grid gap-2">
               {mainNav.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="flex min-h-11 items-center justify-between border border-[#e1e5e7] bg-[#f8faf9] px-4 text-sm font-extrabold uppercase tracking-[0.12em] transition hover:border-[#004ff9] hover:text-[#004ff9]"
-                >
-                  {item.label}
-                  <ArrowRight aria-hidden="true" size={16} />
-                </Link>
+                <ActiveNavLink key={item.href} item={item} variant="mobile" />
               ))}
             </nav>
             <div className="mt-3 grid gap-2 border-t border-[#e1e5e7] pt-3">
@@ -130,7 +121,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
   );
 }
 
-export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProps) {
+export function PageHero({ title, copy, image, imageAlt }: PageHeroProps) {
   return (
     <section className="omi-hero-motion relative isolate flex min-h-[500px] items-center overflow-hidden bg-[#061525] pt-20 md:min-h-[56vh]">
       <SiteHeader variant="overlay" />
@@ -155,9 +146,6 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
         <div className="max-w-4xl">
           <p className="omi-intro-kicker inline-flex max-w-3xl border-l-4 border-[#BD1816] bg-white/10 px-4 py-3 text-sm font-extrabold uppercase leading-6 tracking-[0.16em] text-white backdrop-blur sm:text-base">
             {siteTagline}
-          </p>
-          <p className="omi-intro-kicker mt-6 inline-block border-l-4 border-[#BD1816] bg-white/8 px-4 py-2 text-base font-extrabold uppercase leading-6 tracking-[0.16em] text-white backdrop-blur sm:text-lg">
-            {eyebrow}
           </p>
           <h1 className="omi-intro-title mt-8 text-balance text-5xl font-black uppercase leading-[1.02] text-white sm:text-6xl lg:text-7xl">
             {title}
@@ -333,13 +321,7 @@ export function SiteFooter() {
 
           <nav aria-label="Footer navigation" className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:items-center sm:justify-end">
             {mainNav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="bg-white/7 px-3 py-2 text-center text-sm font-extrabold uppercase tracking-[0.08em] text-white transition hover:bg-white hover:text-[#222222]"
-              >
-                {item.label}
-              </Link>
+              <ActiveNavLink key={item.href} item={item} variant="footer" />
             ))}
           </nav>
         </div>

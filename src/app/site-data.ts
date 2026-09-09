@@ -57,7 +57,7 @@ export const proofPoints: ProofPoint[] = [
   },
   {
     value: "50-500T",
-    label: "Plastic injection mold programs supported",
+    label: "Small single to multicavity tight tolerance parts.",
   },
   {
     value: "500 - 1500T",

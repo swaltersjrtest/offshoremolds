@@ -15,7 +15,6 @@ export default function IndustriesPage() {
   return (
     <main className="min-h-screen bg-[#eef1f2] text-[#222222]">
       <PageHero
-        eyebrow="Industries"
         title="Molds for products the market has to trust."
         copy="OMI supports recreation, consumer product, medical, agriculture, heavy truck, and technical molded part programs where speed and quality matter when going to market."
         image="/omi/industry-recreation-atv-owner.jpg"

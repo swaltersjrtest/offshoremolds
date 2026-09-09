@@ -15,7 +15,6 @@ export default function ProcessPage() {
   return (
     <main className="min-h-screen bg-[#eef1f2] text-[#222222]">
       <PageHero
-        eyebrow="One Source"
         title="Everything important stays in one tooling path."
         copy="From first quote review to final shipment approval, OMI keeps design, offshore build execution, sampling, inspection, and customer communication connected."
         image="/omi/five-axis-cutting-detail.jpg"
