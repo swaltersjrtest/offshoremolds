@@ -46,17 +46,17 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto grid min-h-[600px] max-w-7xl gap-10 px-4 pb-12 pt-20 sm:px-6 lg:grid-cols-[1fr_20rem] lg:items-end lg:px-8">
           <div className="max-w-4xl">
-            <p className="omi-intro-kicker inline-flex border-l-4 border-[#BD1816] bg-white/10 px-4 py-2 text-xs font-extrabold uppercase leading-5 tracking-[0.18em] text-white backdrop-blur">
+            <p className="omi-intro-kicker inline-flex max-w-4xl border-l-4 border-[#BD1816] bg-white/10 px-4 py-3 text-sm font-extrabold uppercase leading-6 tracking-[0.16em] text-white backdrop-blur sm:text-base">
               {siteTagline}
             </p>
-            <h1 className="omi-intro-title mt-7 text-balance text-5xl font-black uppercase leading-[0.98] text-white sm:text-6xl lg:text-[5.1rem]">
+            <h1 className="omi-intro-title mt-8 text-balance text-5xl font-black uppercase leading-[0.98] text-white sm:text-6xl lg:text-[5.1rem]">
               OMI - Fast tooling.
               <br />
               Clear control.
               <br />
               Proven molds.
             </h1>
-            <p className="omi-intro-copy mt-7 max-w-3xl text-pretty text-lg font-medium leading-8 text-white/86 sm:text-xl">
+            <p className="omi-intro-copy mt-9 max-w-3xl text-pretty text-lg font-medium leading-8 text-white/86 sm:text-xl">
               For more than 25 years, Offshore Molds has helped manufacturers move plastic
               injection mold programs from part data to press-ready tooling with western standards,
               offshore speed, and direct U.S. ownership.
@@ -161,13 +161,13 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-3xl text-lg leading-8 text-[#666]">
-              Review the products, the One Source build path, supported industries, and quality
+              Review the One Source build path, supported industries, service areas, and quality
               proof points in their own sections. The homepage gives the story; the detail pages
               carry the evidence.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-px bg-[#d7dcde] md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-px bg-[#d7dcde] md:grid-cols-3">
             {homeRoutes.map((route) => {
               const Icon = route.icon;
 
@@ -190,6 +190,15 @@ export default function Home() {
                 </Link>
               );
             })}
+          </div>
+
+          <div className="mt-8 border-l-4 border-[#BD1816] bg-white px-6 py-6 shadow-sm sm:px-8">
+            <p className="max-w-5xl text-lg font-semibold leading-8 text-[#3f4548]">
+              OMI was founded in 2001 by Mold Makers, each one having over 43 years of experience in
+              the industry. The U.S. headquarters is located in Wheat Ridge, Colorado with all of our
+              guys in the OMI office having at least 30 years of tooling experience. Everything runs
+              thru us, we are your ONE SOURCE.
+            </p>
           </div>
         </div>
       </section>

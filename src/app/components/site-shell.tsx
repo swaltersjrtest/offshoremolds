@@ -132,7 +132,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
 export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProps) {
   return (
-    <section className="omi-hero-motion relative isolate flex min-h-[440px] items-end overflow-hidden bg-[#061525] pt-20 md:min-h-[52vh]">
+    <section className="omi-hero-motion relative isolate flex min-h-[500px] items-center overflow-hidden bg-[#061525] pt-20 md:min-h-[56vh]">
       <SiteHeader variant="overlay" />
       <Image
         src={image}
@@ -151,18 +151,18 @@ export function PageHero({ eyebrow, title, copy, image, imageAlt }: PageHeroProp
         className="omi-hero-red-wedge absolute bottom-0 left-0 h-24 w-56 bg-[#BD1816]/90 md:h-32 md:w-72"
         style={{ clipPath: "polygon(0 32%, 68% 100%, 0 100%)" }}
       />
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-12 pt-28 sm:px-6 lg:px-8 lg:pb-14">
-        <div className="max-w-2xl">
-          <p className="omi-intro-kicker inline-flex max-w-2xl border-l-4 border-[#BD1816] bg-white/10 px-4 py-2 text-xs font-extrabold uppercase leading-5 tracking-[0.18em] text-white backdrop-blur">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="max-w-4xl">
+          <p className="omi-intro-kicker inline-flex max-w-3xl border-l-4 border-[#BD1816] bg-white/10 px-4 py-3 text-sm font-extrabold uppercase leading-6 tracking-[0.16em] text-white backdrop-blur sm:text-base">
             {siteTagline}
           </p>
-          <p className="omi-intro-kicker mt-4 inline-block border-l-4 border-[#BD1816] bg-white/8 px-4 py-2 text-sm font-extrabold uppercase leading-6 tracking-[0.18em] text-white backdrop-blur">
+          <p className="omi-intro-kicker mt-6 inline-block border-l-4 border-[#BD1816] bg-white/8 px-4 py-2 text-base font-extrabold uppercase leading-6 tracking-[0.16em] text-white backdrop-blur sm:text-lg">
             {eyebrow}
           </p>
-          <h1 className="omi-intro-title mt-5 text-balance text-4xl font-black uppercase leading-[1.02] text-white sm:text-6xl">
+          <h1 className="omi-intro-title mt-8 text-balance text-5xl font-black uppercase leading-[1.02] text-white sm:text-6xl lg:text-7xl">
             {title}
           </h1>
-          <p className="omi-intro-copy mt-5 max-w-xl text-pretty text-lg font-medium leading-8 text-white/82 sm:text-xl">
+          <p className="omi-intro-copy mt-9 max-w-2xl text-pretty text-lg font-medium leading-8 text-white/82 sm:text-xl">
             {copy}
           </p>
         </div>
@@ -242,18 +242,6 @@ export function ContactPanel() {
               General
             </span>
             {contactInfo.generalEmail}
-          </span>
-        </a>
-        <a
-          href={`mailto:${contactInfo.salesEmail}`}
-          className="flex items-start gap-3 transition hover:text-[#BD1816]"
-        >
-          <Mail aria-hidden="true" className="mt-1 shrink-0" size={20} />
-          <span>
-            <span className="block text-sm font-extrabold uppercase tracking-[0.14em] text-[#777]">
-              Sales
-            </span>
-            {contactInfo.salesEmail}
           </span>
         </a>
         <div className="flex items-start gap-3">

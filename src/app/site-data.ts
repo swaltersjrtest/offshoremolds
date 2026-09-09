@@ -7,7 +7,6 @@ import {
   Gauge,
   HeartPulse,
   Microscope,
-  Ruler,
   ShieldCheck,
   Wrench,
 } from "lucide-react";
@@ -32,7 +31,6 @@ export type IndustryItem = {
 };
 
 export const mainNav = [
-  { label: "Products", href: "/capabilities" },
   { label: "One Source", href: "/process" },
   { label: "Industries", href: "/industries" },
   { label: "Quality", href: "/quality" },
@@ -58,12 +56,12 @@ export const proofPoints: ProofPoint[] = [
     label: "After design approval",
   },
   {
-    value: "50-3500T",
+    value: "50-500T",
     label: "Plastic injection mold programs supported",
   },
   {
     value: "500 - 1500T",
-    label: "Medium mold tonnage single to multicavity tool.",
+    label: "Medium mold tonnage single to multicavity.",
   },
   {
     value: "1500T - 3500T",
@@ -223,12 +221,6 @@ export const faqs = [
 
 export const homeRoutes = [
   {
-    title: "Products",
-    href: "/capabilities",
-    icon: Ruler,
-    text: "See tooling capacity, moldflow support, sampling, and validation details.",
-  },
-  {
     title: "One Source",
     href: "/process",
     icon: ClipboardCheck,
@@ -238,7 +230,7 @@ export const homeRoutes = [
     title: "Industries",
     href: "/industries",
     icon: Factory,
-    text: "Review the markets and part types OMI supports with offshore tooling programs.",
+    text: "Review the markets, part types, and service areas OMI supports with offshore tooling programs.",
   },
   {
     title: "Quality",
@@ -257,7 +249,7 @@ export const lifecycleHighlights = [
   {
     title: "Tool Build",
     text: "China-based execution with daily oversight, milestone visibility, and U.S. program ownership.",
-    href: "/capabilities",
+    href: "/industries",
   },
   {
     title: "Sampling & Validation",
