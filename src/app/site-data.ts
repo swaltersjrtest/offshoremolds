@@ -5,8 +5,8 @@ import {
   ClipboardCheck,
   Factory,
   Gauge,
+  HeartPulse,
   Microscope,
-  Ruler,
   ShieldCheck,
   Wrench,
 } from "lucide-react";
@@ -28,24 +28,24 @@ export type IndustryItem = {
   icon: LucideIcon;
   image: string;
   text: string;
-  details: string[];
 };
 
 export const mainNav = [
-  { label: "Products", href: "/capabilities" },
   { label: "One Source", href: "/process" },
   { label: "Industries", href: "/industries" },
   { label: "Quality", href: "/quality" },
   { label: "Contact", href: "/contact" },
 ];
 
+export const siteTagline = "World Leader of Zero Tolerance Plastic Injection Molds in 6 Weeks";
+
 export const contactInfo = {
   phone: "303-421-0712",
   phoneHref: "tel:3034210712",
   generalEmail: "information@offshoremolds.com",
-  salesEmail: "bstone@offshoremolds.com",
+  salesEmail: "sales@offshoremolds.com",
   rfqHref:
-    "mailto:bstone@offshoremolds.com?subject=Tooling%20RFQ&body=Project%20name:%0APart%20files:%0ATarget%20press%20size:%0AMaterial:%0AAnnual%20volume:%0ACritical%20tolerances:%0ALaunch%20timing:%0A",
+    "mailto:sales@offshoremolds.com?subject=Tooling%20RFQ&body=Project%20name:%0APart%20files:%0ATarget%20press%20size:%0AMaterial:%0AAnnual%20volume:%0ACritical%20tolerances:%0ALaunch%20timing:%0A",
   usOffice: ["4251 Kipling St, Suite 420", "Wheat Ridge, CO 80033"],
   chinaOffice: ["Huang Jiang Town, Dongguan", "+(86 769) 82330086"],
 };
@@ -53,15 +53,15 @@ export const contactInfo = {
 export const proofPoints: ProofPoint[] = [
   {
     value: "6 Weeks to T1",
-    label: "Target after design approval",
+    label: "After design approval",
   },
   {
-    value: "50-3500T",
-    label: "Plastic injection mold programs supported",
+    value: "50-500T",
+    label: "Small single to multicavity tight tolerance parts.",
   },
   {
     value: "500 - 1500T",
-    label: "Medium mold tonnage single to multicavity tool.",
+    label: "Medium mold tonnage single to multicavity.",
   },
   {
     value: "1500T - 3500T",
@@ -126,52 +126,46 @@ export const capabilities = [
 
 export const industries: IndustryItem[] = [
   {
-    title: "Automotive",
-    eyebrow: "Interior, exterior, lighting, and underhood",
+    title: "Recreation",
+    eyebrow: "ATV, UTV, and personal watercraft programs",
     icon: Gauge,
-    image: "/omi/five-axis-polished-cavity.jpg",
-    text: "Plastic injection mold programs for visible and functional parts where fit, finish, and repeatability have to survive launch pressure.",
-    details: ["Class-A surfaces", "Complex shutoffs", "Launch timing support"],
+    image: "/omi/industry-recreation-atv-owner.jpg",
+    text: "OMI supports recreation vehicle and watercraft programs with tooling for rugged molded parts where fit, texture, durability, outdoor exposure, and repeatable production matter.",
   },
   {
     title: "Consumer Products",
-    eyebrow: "Durable goods and molded assemblies",
+    eyebrow: "Trash cans, blenders, and molded goods",
     icon: Boxes,
-    image: "/omi/polished-components.png",
-    text: "Tooling support for products with cosmetic expectations, frequent design revisions, and buyer-facing quality requirements.",
-    details: ["Cosmetic finish planning", "Multi-cavity tooling", "Documented samples"],
+    image: "/omi/industry-consumer-products-owner.jpg",
+    text: "Tooling support for everyday molded products such as trash containers, blender housings, appliance parts, and durable goods with buyer-facing quality requirements.",
   },
   {
-    title: "Recreational",
-    eyebrow: "Outdoor, power sport, and lifestyle parts",
-    icon: Ruler,
-    image: "/omi/five-axis-finished-cavity.jpg",
-    text: "Molds for rugged plastic components where structure, texture, and visible surfaces need to line up before production starts.",
-    details: ["Large part geometry", "Texture-ready steel", "Sampling visibility"],
+    title: "Medical",
+    eyebrow: "Beds, equipment, and molded medical components",
+    icon: HeartPulse,
+    image: "/omi/industry-medical-bed-owner.jpg",
+    text: "Tooling support for medical equipment components such as adjustable bed structures, covers, rails, housings, and functional plastic parts that need consistent fit and repeatable production.",
   },
   {
     title: "Agriculture & Equipment",
-    eyebrow: "Utility parts and machine components",
+    eyebrow: "Tractor, utility, and equipment plastics",
     icon: Factory,
-    image: "/omi/eight-core-mold-composite.jpg",
-    text: "Tooling for heavy-use molded parts with practical design requirements, robust construction, and clear approval checkpoints.",
-    details: ["Thick-wall considerations", "Serviceable designs", "Steel and component review"],
+    image: "/omi/industry-agriculture-tractor-owner.jpg",
+    text: "Molds for agriculture and equipment components that need robust plastic construction, outdoor durability, clean fit, and practical service-life performance.",
   },
   {
     title: "Heavy Truck",
     eyebrow: "Large-format molded parts",
     icon: Wrench,
-    image: "/omi/five-axis-large-tool-machining.jpg",
-    text: "Support for big tools, large press programs, and molded parts that need coordinated machining, validation, and final handoff.",
-    details: ["1500T - 3500T programs", "Large tool machining", "Final teardown checks"],
+    image: "/omi/industry-heavy-truck-owner.jpg",
+    text: "Support for truck-related molded components where large geometry, repeatability, structural performance, and final handoff have to stay aligned.",
   },
   {
-    title: "Industrial & Technical",
-    eyebrow: "Tight-tolerance functional plastic",
+    title: "Technical & Industrial",
+    eyebrow: "Fiber enclosures, ice machines, and housings",
     icon: ShieldCheck,
-    image: "/omi/moldflow-design.png",
-    text: "Mold programs for technical parts where risk needs to be removed early through moldflow, design review, and measured sampling.",
-    details: ["Moldflow review", "CMM-backed approval", "Process documentation"],
+    image: "/omi/industry-technical-industrial-owner.jpg",
+    text: "Mold programs for fiber enclosure boxes, commercial ice-machine components, technical housings, power-tool components, vacuum products, and functional plastic parts with measurable fit requirements.",
   },
 ];
 
@@ -199,7 +193,7 @@ export const processSteps = [
 ];
 
 export const qualityItems = [
-  "Domestic or Finkl P-20 and H-13 steel options",
+  "Domestic and Imported steel options",
   "DME or Progressive equivalent standard components",
   "CMM first article inspection against customer drawings",
   "Detailed checklists for major tooling milestones",
@@ -227,12 +221,6 @@ export const faqs = [
 
 export const homeRoutes = [
   {
-    title: "Products",
-    href: "/capabilities",
-    icon: Ruler,
-    text: "See tooling capacity, moldflow support, sampling, and validation details.",
-  },
-  {
     title: "One Source",
     href: "/process",
     icon: ClipboardCheck,
@@ -242,7 +230,7 @@ export const homeRoutes = [
     title: "Industries",
     href: "/industries",
     icon: Factory,
-    text: "Review the markets and part types OMI supports with offshore tooling programs.",
+    text: "Review the markets, part types, and service areas OMI supports with offshore tooling programs.",
   },
   {
     title: "Quality",
@@ -261,7 +249,7 @@ export const lifecycleHighlights = [
   {
     title: "Tool Build",
     text: "China-based execution with daily oversight, milestone visibility, and U.S. program ownership.",
-    href: "/capabilities",
+    href: "/industries",
   },
   {
     title: "Sampling & Validation",
