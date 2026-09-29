@@ -4,9 +4,8 @@ import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
-// Visitor analytics for the OMI sales dashboard. crm.offshoremolds.com serves the same
-// file once its DNS record is live; either address works.
-const TRACKER_SRC = "https://omi-crm-six.vercel.app/omi-tracker.js";
+// Visitor analytics for the OMI sales dashboard.
+const TRACKER_SRC = "https://crm.offshoremolds.com/omi-tracker.js";
 
 // false: analytics run until the visitor clicks Decline (U.S. notice model).
 // true: nothing loads until the visitor clicks Accept (EU/UK opt-in model).
