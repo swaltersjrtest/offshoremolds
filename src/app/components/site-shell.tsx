@@ -68,7 +68,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
         <nav
           aria-label="Primary navigation"
           className={cn(
-            "hidden shrink-0 items-center gap-3 px-3 py-3 text-xs font-bold uppercase text-[#313131] md:flex lg:gap-5 lg:px-5 lg:text-sm",
+            "hidden shrink-0 items-center gap-3 px-3 py-3 text-xs font-bold uppercase text-[#313131] lg:flex lg:gap-5 lg:px-5 lg:text-sm",
             isOverlay
               ? "bg-white/0"
               : "bg-white/0",
@@ -81,7 +81,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
 
         <Link
           href="/contact"
-          className="hidden min-h-12 items-center gap-2 bg-[#BD1816] px-5 pl-7 text-sm font-extrabold uppercase tracking-[0.08em] text-white shadow-sm transition hover:brightness-90 md:inline-flex"
+          className="hidden min-h-12 items-center gap-2 bg-[#BD1816] px-5 pl-7 text-sm font-extrabold uppercase tracking-[0.08em] text-white shadow-sm transition hover:brightness-90 xl:inline-flex"
           style={{ clipPath: "polygon(18px 0, 100% 0, 100% 100%, 0 100%)" }}
         >
           <Phone aria-hidden="true" size={17} />
@@ -89,7 +89,7 @@ export function SiteHeader({ variant = "solid" }: HeaderProps) {
           <span className="sm:hidden">Contact</span>
         </Link>
 
-        <details className="group relative md:hidden">
+        <details className="group relative lg:hidden">
           <summary className="flex min-h-11 cursor-pointer list-none items-center justify-center gap-2 bg-[#BD1816] px-4 pl-6 text-xs font-extrabold uppercase tracking-[0.12em] text-white shadow-sm transition hover:brightness-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#004ff9] focus-visible:ring-offset-2 [&::-webkit-details-marker]:hidden">
             <Menu aria-hidden="true" size={18} />
             Menu

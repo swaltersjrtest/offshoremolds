@@ -33,6 +33,7 @@ export type IndustryItem = {
 export const mainNav = [
   { label: "One Source", href: "/process" },
   { label: "Industries", href: "/industries" },
+  { label: "Capabilities", href: "/capabilities" },
   { label: "Quality", href: "/quality" },
   { label: "Contact", href: "/contact" },
 ];
