@@ -88,6 +88,9 @@ export default function Home() {
                   sizes="(min-width: 1024px) 320px, 208px"
                   priority
                 />
+                <span className="absolute inset-x-0 bottom-0 text-center font-serif text-[clamp(10px,1vw,14px)] font-bold text-[#173c70]">
+                  Established 2001
+                </span>
               </div>
             </div>
           </div>
