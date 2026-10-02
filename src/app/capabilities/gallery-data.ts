@@ -152,44 +152,9 @@ export const capabilityGalleries = [
     ]
   },
   {
-    "title": "Shipping",
-    "slug": "shipping",
-    "description": "A look at mold preparation, packing, and shipping.",
-    "images": [
-      {
-        "src": "/omi/capabilities/shipping-0.webp",
-        "alt": "Shipping — photo 1"
-      },
-      {
-        "src": "/omi/capabilities/shipping-1.webp",
-        "alt": "Shipping — photo 2"
-      },
-      {
-        "src": "/omi/capabilities/shipping-2.webp",
-        "alt": "Shipping — photo 3"
-      },
-      {
-        "src": "/omi/capabilities/shipping-3.webp",
-        "alt": "Shipping — photo 4"
-      },
-      {
-        "src": "/omi/capabilities/shipping-4.webp",
-        "alt": "Shipping — photo 5"
-      },
-      {
-        "src": "/omi/capabilities/shipping-5.webp",
-        "alt": "Shipping — photo 6"
-      },
-      {
-        "src": "/omi/capabilities/shipping-6.webp",
-        "alt": "Shipping — photo 7"
-      }
-    ]
-  },
-  {
     "title": "Soft Gate",
     "slug": "soft-gate",
-    "description": "Soft gate technology and tooling details.",
+    "description": "Soft Gate technology eliminates gate blemishes and minimizes weld lines and structural weakness on critical parts.",
     "images": [
       {
         "src": "/omi/capabilities/soft-gate-0.webp",
@@ -222,6 +187,41 @@ export const capabilityGalleries = [
       {
         "src": "/omi/capabilities/soft-gate-7.webp",
         "alt": "Soft Gate — photo 8"
+      }
+    ]
+  },
+  {
+    "title": "Shipping",
+    "slug": "shipping",
+    "description": "A look at mold preparation, packing, and shipping.",
+    "images": [
+      {
+        "src": "/omi/capabilities/shipping-0.webp",
+        "alt": "Shipping — photo 1"
+      },
+      {
+        "src": "/omi/capabilities/shipping-1.webp",
+        "alt": "Shipping — photo 2"
+      },
+      {
+        "src": "/omi/capabilities/shipping-2.webp",
+        "alt": "Shipping — photo 3"
+      },
+      {
+        "src": "/omi/capabilities/shipping-3.webp",
+        "alt": "Shipping — photo 4"
+      },
+      {
+        "src": "/omi/capabilities/shipping-4.webp",
+        "alt": "Shipping — photo 5"
+      },
+      {
+        "src": "/omi/capabilities/shipping-5.webp",
+        "alt": "Shipping — photo 6"
+      },
+      {
+        "src": "/omi/capabilities/shipping-6.webp",
+        "alt": "Shipping — photo 7"
       }
     ]
   }
