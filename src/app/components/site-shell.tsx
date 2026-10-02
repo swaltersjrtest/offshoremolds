@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { contactInfo, mainNav, siteTagline } from "../site-data";
 import { ActiveNavLink } from "./active-nav-link";
+import { CookieSettingsButton } from "./cookie-consent";
 
 type HeaderProps = {
   variant?: "overlay" | "solid";
@@ -326,10 +327,16 @@ export function SiteFooter() {
           </nav>
         </div>
 
-        <div className="border-t border-white/12 pt-5">
+        <div className="flex flex-col gap-2 border-t border-white/12 pt-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs leading-6 text-white/68">
             Copyright 2026 Offshore Molds, Inc. Built by ZUVIX.NET
           </p>
+          <div className="flex gap-5 text-xs leading-6 text-white/68">
+            <Link href="/privacy" className="transition hover:text-white">
+              Privacy Policy
+            </Link>
+            <CookieSettingsButton className="cursor-pointer transition hover:text-white" />
+          </div>
         </div>
       </div>
     </footer>
