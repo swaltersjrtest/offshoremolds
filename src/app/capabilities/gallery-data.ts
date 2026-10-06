@@ -78,6 +78,14 @@ export const capabilityGalleries = [
     "description": "Explore collapsible core tooling and component details.",
     "images": [
       {
+        "src": "/omi/capabilities/collapsible-cores-cover.webp",
+        "alt": "Collapsible Cores — cover photo of an eight-cavity mold"
+      },
+      {
+        "src": "/omi/capabilities/collapsible-cores-20260916-135831.webp",
+        "alt": "Collapsible Cores — second newly uploaded mold photo"
+      },
+      {
         "src": "/omi/capabilities/collapsible-cores-0.webp",
         "alt": "Collapsible Cores — photo 1"
       },
